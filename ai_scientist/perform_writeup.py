@@ -87,7 +87,7 @@ Pay attention to any accidental uses of HTML syntax, e.g. </end instead of \\end
             coder.run(prompt)
         else:
             break
-    compile_latex(cwd, pdf_file, timeout=timeout)
+    # compile_latex(cwd, pdf_file, timeout=timeout)
 
 
 def compile_latex(cwd, pdf_file, timeout=30):
@@ -130,7 +130,7 @@ per_section_tips = {
     "Abstract": """
 - TL;DR of the paper
 - What are we trying to do and why is it relevant?
-- Why is this hard? 
+- Why is this hard?
 - How do we solve it (i.e. our contribution!)
 - How do we verify that we solved it (e.g. Experiments and results)
 
@@ -139,20 +139,20 @@ Please make sure the abstract reads smoothly and is well-motivated. This should 
     "Introduction": """
 - Longer version of the Abstract, i.e. of the entire paper
 - What are we trying to do and why is it relevant?
-- Why is this hard? 
+- Why is this hard?
 - How do we solve it (i.e. our contribution!)
 - How do we verify that we solved it (e.g. Experiments and results)
 - New trend: specifically list your contributions as bullet points
 - Extra space? Future work!
 """,
     "Related Work": """
-- Academic siblings of our work, i.e. alternative attempts in literature at trying to solve the same problem. 
-- Goal is to “Compare and contrast” - how does their approach differ in either assumptions or method? If their method is applicable to our Problem Setting I expect a comparison in the experimental section. If not, there needs to be a clear statement why a given method is not applicable. 
+- Academic siblings of our work, i.e. alternative attempts in literature at trying to solve the same problem.
+- Goal is to “Compare and contrast” - how does their approach differ in either assumptions or method? If their method is applicable to our Problem Setting I expect a comparison in the experimental section. If not, there needs to be a clear statement why a given method is not applicable.
 - Note: Just describing what another paper is doing is not enough. We need to compare and contrast.
 """,
     "Background": """
-- Academic Ancestors of our work, i.e. all concepts and prior work that are required for understanding our method. 
-- Usually includes a subsection, Problem Setting, which formally introduces the problem setting and notation (Formalism) for our method. Highlights any specific assumptions that are made that are unusual. 
+- Academic Ancestors of our work, i.e. all concepts and prior work that are required for understanding our method.
+- Usually includes a subsection, Problem Setting, which formally introduces the problem setting and notation (Formalism) for our method. Highlights any specific assumptions that are made that are unusual.
 - Note: If our paper introduces a novel problem setting as part of its contributions, it's best to have a separate Section.
 """,
     "Method": """
@@ -167,7 +167,7 @@ Please make sure the abstract reads smoothly and is well-motivated. This should 
 - Shows the results of running Method on our problem described in Experimental Setup.
 - Includes statements on hyperparameters and other potential issues of fairness.
 - Only includes results that have actually been run and saved in the logs. Do not hallucinate results that don't exist.
-- If results exist: compares to baselines and includes statistics and confidence intervals. 
+- If results exist: compares to baselines and includes statistics and confidence intervals.
 - If results exist: includes ablation studies to show that specific parts of the method are relevant.
 - Discusses limitations of the method.
 - Make sure to include all the results from the experiments, and include all relevant figures.
