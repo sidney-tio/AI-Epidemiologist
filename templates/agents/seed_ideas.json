@@ -1,0 +1,42 @@
+[
+  {
+    "Name": "decentralised_or_coe",
+    "Title": "Divide and Conquer or Conquer and Divide?",
+    "Experiment": "In this experiment, we compare how centralised or decentralised data science teams help organisations become more data driven. We simulate these interactions at organisations of different characteristics and evaluate the results.",
+    "Interestingness": 7,
+    "Feasibility": 10,
+    "Novelty": 3
+  },
+  {
+    "Name": "leadership_styles",
+    "Title": "How does leadership styles effect workers in Tech Firms?",
+    "Experiment": "In this experiment, we compare how different leadership styles effect the productivity of tech workers, across different range of organisations.",
+    "Interestingness": 4,
+    "Feasibility": 7,
+    "Novelty": 3
+  },
+  {
+    "Name": "family_planning",
+    "Title": "Social Support in Child Rearing and Family Planning",
+    "Experiment": "In this experiment, we explore the role of social support in the child rearing process, and how it affects decisions to raise a child.",
+    "Interestingness": 8,
+    "Feasibility": 8,
+    "Novelty": 3
+  },
+  {
+    "Name": "ai_adoption",
+    "Title": "Technology Adoption in Ageing Populations",
+    "Experiment": "In this experiment, we explore different policies in helping societies to increase their digital literacy and overall adoption of technology in their everyday lives.",
+    "Interestingness": 9,
+    "Feasibility": 8,
+    "Novelty": 3
+  },
+  {
+    "Name": "loneliness",
+    "Title": "Loneliness, the Social Epidemic",
+    "Experiment": "In this experiment, we explore different policies in helping societies to decrease social isolation.",
+    "Interestingness": 9,
+    "Feasibility": 8,
+    "Novelty": 3
+  }
+]
