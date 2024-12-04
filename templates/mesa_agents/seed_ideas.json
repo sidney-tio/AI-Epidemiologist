@@ -1,0 +1,34 @@
+[
+  {
+    "Name": "family_planning",
+    "Title": "Social Support in Child Rearing and Family Planning",
+    "Experiment": "In this experiment, we explore the role of social support in the child rearing process, and how it affects decisions to raise a child.",
+    "Interestingness": 8,
+    "Feasibility": 8,
+    "Novelty": 3
+  },
+  {
+    "Name": "ai_adoption",
+    "Title": "Technology Adoption in Ageing Populations",
+    "Experiment": "In this experiment, we explore different policies in helping societies to increase their digital literacy and overall adoption of technology in their everyday lives.",
+    "Interestingness": 9,
+    "Feasibility": 8,
+    "Novelty": 3
+  },
+  {
+    "Name": "loneliness",
+    "Title": "Loneliness, the Social Epidemic",
+    "Experiment": "In this experiment, we explore different policies in helping societies to decrease social isolation.",
+    "Interestingness": 9,
+    "Feasibility": 8,
+    "Novelty": 3
+  },
+  {
+    "Name": "wealth",
+    "Title": "Wealth for All",
+    "Experiment": "In this experiment, we explore different policies for the wealthy to better spread their wealth to equal parts of societies, such that it is equitable for all.",
+    "Interestingness": 9,
+    "Feasibility": 8,
+    "Novelty": 3
+  }
+]
