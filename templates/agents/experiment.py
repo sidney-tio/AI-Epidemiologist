@@ -24,12 +24,6 @@ class ExampleState(str, Enum):
     ACTIVE = "ACTIVE"
     INACTIVE = "INACTIVE"
 
-class LonelinessState(str, Enum):
-    """States for loneliness simulation"""
-    CONNECTED = "CONNECTED"
-    LONELY = "LONELY"
-    RECOVERING = "RECOVERING"
-
 @dataclass
 class AgentTraits:
     """Base class for agent traits"""

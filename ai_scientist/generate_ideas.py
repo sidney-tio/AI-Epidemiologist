@@ -308,7 +308,7 @@ def search_for_papers(query, result_limit=10) -> Union[None, List[Dict]]:
     return papers
 
 
-novelty_system_msg = """You are an ambitious AI PhD student who is looking to publish a paper that will contribute significantly to the field.
+novelty_system_msg = """You are an ambitious Social Science PhD student who is looking to publish a paper that will contribute significantly to the field.
 You have an idea and you want to check if it is novel or not. I.e., not overlapping significantly with existing literature or already well explored.
 Be a harsh critic for novelty, ensure there is a sufficient contribution in the idea for a new conference or workshop paper.
 You will be given access to the Semantic Scholar API, which you may use to survey the literature and find relevant papers to help you make your decision.
