@@ -95,6 +95,9 @@ if __name__== "__main__":
 
     file_path = os.path.join("./", "final_info.json")
     run_data = {out_dir: {'means':{'model_means': means, 'agent_means': agent_means}}}
+    with open(os.path.join(out_dir, "final_info.json"), "w") as f:
+        json.dump(run_data,f)
+
     if os.path.exists(file_path) and os.path.getsize(file_path) > 0:
         with open(file_path, 'r') as f:
             existing_data = json.load(f)
@@ -103,3 +106,4 @@ if __name__== "__main__":
 
     with open(file_path, 'w') as f:
         json.dump(run_data, f)
+
