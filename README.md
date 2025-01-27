@@ -43,16 +43,6 @@ The interview process is implemented through `templates\interview\experiment.py`
 - Generates summary reports of key themes and insights
 
 **Note**: This system is intended to complement, not replace, traditional human interviews in social research.
-## Table of Contents
-
-1. [Requirements](#requirements)
-2. [Run AI Scientist Paper Generation Experiments](#run-ai-scientist-paper-generation-experiments)
-3. [Getting an LLM Generated Paper Review](#getting-an-llm-generated-paper-review)
-4. [Making your own Template](#making-your-own-template)
-5. [Template Resources](#template-resources)
-6. [Citing The AI Scientist](#citing-the-ai-scientist)
-7. [Frequently Asked Questions](#faq)
-8. [Containerization](#containerization)
 
 ## Requirements
 The installation instructions can be found in the original [AI Scientist repo](https://github.com/SakanaAI/AI-Scientist).
