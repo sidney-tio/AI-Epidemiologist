@@ -1,0 +1,26 @@
+[
+  {
+    "Name": "family_planning",
+    "Title": "Social Support in Child Rearing and Family Planning",
+    "Experiment": "We explore the role of social support in the child rearing process, and how it affects decisions to raise a child in Japan. We discuss a policy to subsidize housing for individuals to live near their families, and also increased paternity leave for fathers.",
+    "Interestingness": 8,
+    "Feasibility": 8,
+    "Novelty": 3
+  },
+  {
+    "Name": "ai_adoption",
+    "Title": "Technology Adoption in Ageing Populations",
+    "Experiment": "We explore different policies in helping societies to increase their digital literacy and overall adoption of technology in their everyday lives.",
+    "Interestingness": 9,
+    "Feasibility": 8,
+    "Novelty": 3
+  },
+  {
+    "Name": "loneliness",
+    "Title": "Loneliness, the Social Epidemic",
+    "Experiment": "We explore different policies in helping societies to decrease social isolation.",
+    "Interestingness": 9,
+    "Feasibility": 8,
+    "Novelty": 3
+  }
+]

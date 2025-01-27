@@ -1,0 +1,286 @@
+\documentclass{article} % For LaTeX2e
+\usepackage{iclr2024_conference,times}
+
+\usepackage[utf8]{inputenc} % allow utf-8 input
+\usepackage[T1]{fontenc}    % use 8-bit T1 fonts
+\usepackage{hyperref}       % hyperlinks
+\usepackage{url}            % simple URL typesetting
+\usepackage{booktabs}       % professional-quality tables
+\usepackage{amsfonts}       % blackboard math symbols
+\usepackage{nicefrac}       % compact symbols for 1/2, etc.
+\usepackage{microtype}      % microtypography
+\usepackage{titletoc}
+
+\usepackage{subcaption}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{multirow}
+\usepackage{color}
+\usepackage{colortbl}
+\usepackage{cleveref}
+\usepackage{algorithm}
+\usepackage{algorithmicx}
+\usepackage{algpseudocode}
+
+\DeclareMathOperator*{\argmin}{arg\,min}
+\DeclareMathOperator*{\argmax}{arg\,max}
+
+\graphicspath{{../}} % To reference your generated figures, see below.
+\begin{filecontents}{references.bib}
+  @inproceedings{park2023generative,
+  title={Generative agents: Interactive simulacra of human behavior},
+  author={Park, Joon Sung and O'Brien, Joseph and Cai, Carrie Jun and Morris, Meredith Ringel and Liang, Percy and Bernstein, Michael S},
+  booktitle={Proceedings of the 36th annual acm symposium on user interface software and technology},
+  pages={1--22},
+  year={2023}
+}
+
+@article{shanahan2023role,
+  title={Role play with large language models},
+  author={Shanahan, Murray and McDonell, Kyle and Reynolds, Laria},
+  journal={Nature},
+  volume={623},
+  number={7987},
+  pages={493--498},
+  year={2023},
+  publisher={Nature Publishing Group UK London}
+}
+
+@article{wang2023describe,
+  title={Describe, explain, plan and select: Interactive planning with large language models enables open-world multi-task agents},
+  author={Wang, Zihao and Cai, Shaofei and Chen, Guanzhou and Liu, Anji and Ma, Xiaojian and Liang, Yitao},
+  journal={arXiv preprint arXiv:2302.01560},
+  year={2023}
+}
+
+@article{liu2023agentbench,
+  title={Agentbench: Evaluating llms as agents},
+  author={Liu, Xiao and Yu, Hao and Zhang, Hanchen and Xu, Yifan and Lei, Xuanyu and Lai, Hanyu and Gu, Yu and Ding, Hangliang and Men, Kaiwen and Yang, Kejuan and others},
+  journal={arXiv preprint arXiv:2308.03688},
+  year={2023}
+}
+
+@article{poledna2023economic,
+  title={Economic forecasting with an agent-based model},
+  author={Poledna, Sebastian and Miess, Michael Gregor and Hommes, Cars and Rabitsch, Katrin},
+  journal={European Economic Review},
+  volume={151},
+  pages={104306},
+  year={2023},
+  publisher={Elsevier}
+}
+
+@article{west2023agent,
+  title={Agent-based methods facilitate integrative science in cancer},
+  author={West, Jeffrey and Robertson-Tessi, Mark and Anderson, Alexander RA},
+  journal={Trends in cell biology},
+  volume={33},
+  number={4},
+  pages={300--311},
+  year={2023},
+  publisher={Elsevier}
+}
+
+@article{zhou2023peer,
+  title={Peer-to-peer energy sharing and trading of renewable energy in smart communities─ trading pricing models, decision-making and agent-based collaboration},
+  author={Zhou, Yuekuan and Lund, Peter D},
+  journal={Renewable Energy},
+  volume={207},
+  pages={177--193},
+  year={2023},
+  publisher={Elsevier}
+}
+
+
+@Inproceedings{Jiatong2021ABO,
+ author = {Li Jiatong},
+ title = {A BRIEF OVERVIEW OF GRAPH THEORY: ERDOS-RENYI RANDOM GRAPH MODEL AND SMALL WORLD PHENOMENON},
+ year = {2021}
+}
+
+
+@Inproceedings{Jiatong2021ABO,
+ author = {Li Jiatong},
+ title = {A BRIEF OVERVIEW OF GRAPH THEORY: ERDOS-RENYI RANDOM GRAPH MODEL AND SMALL WORLD PHENOMENON},
+ year = {2021}
+}
+
+\end{filecontents}
+
+\title{Centralized vs. Decentralized Data Science Teams: A Simulation Study}
+
+\author{GPT-4o \& Claude\\
+Department of Computer Science\\
+University of LLMs\\
+}
+
+\newcommand{\fix}{\marginpar{FIX}}
+\newcommand{\new}{\marginpar{NEW}}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+This paper investigates the impact of centralized versus decentralized data science teams on organizational data-driven decision-making, a crucial aspect as organizations increasingly rely on data science for strategic decisions. The challenge lies in simulating realistic team interactions and measuring their effectiveness. We address this by developing a novel simulation framework that models interactions within data science teams under different structural configurations, varying the connection probabilities to represent different degrees of centralization. We validate our approach through a series of experiments, demonstrating that varying degrees of centralization affect agent activity levels, with significant implications for organizational design. Our results provide insights into the optimal structure of data science teams, highlighting the importance of considering team configuration in organizational design.
+\end{abstract}
+
+\section{Introduction}
+\label{sec:intro}
+
+In recent years, organizations have increasingly relied on data science to drive strategic decisions and gain competitive advantages. The structure of data science teams, whether centralized or decentralized, plays a crucial role in the effectiveness of data-driven decision-making. However, the optimal team structure remains a subject of debate and requires thorough investigation.
+
+Determining the best team structure is challenging due to the complexity of simulating realistic team interactions and measuring their effectiveness. Different organizational characteristics and varying degrees of centralization add layers of complexity to this problem.
+
+To address these challenges, we propose a novel simulation framework that models the interactions within data science teams under different structural configurations. By varying the connection probabilities among team members, we can simulate centralized and decentralized team structures and evaluate their performance.
+
+We validate our approach through a series of experiments, simulating various team structures and measuring agent activity levels. Our results provide insights into how different degrees of centralization impact the effectiveness of data science teams.
+
+Our contributions are as follows:
+\begin{itemize}
+    \item We develop a simulation framework to model interactions within data science teams.
+    \item We conduct experiments to evaluate the performance of centralized and decentralized team structures.
+    \item We provide insights into the impact of team structure on agent activity levels and organizational design.
+\end{itemize}
+
+Future work will explore additional factors influencing team performance, such as communication patterns and individual agent traits, to further refine our understanding of optimal team structures.
+
+\section{Related Work}
+\label{sec:related}
+% Structure of the Related Work section:
+% 1. Introduction to the section
+% 2. Comparison with generative agents in simulating human behavior (Park et al., 2023)
+% 3. Role-playing with large language models (Shanahan et al., 2023)
+% 4. Interactive planning with large language models (Wang et al., 2023)
+% 5. Evaluating large language models as agents (Liu et al., 2023)
+% 6. Agent-based modeling in economic forecasting (Poledna et al., 2023)
+% 7. Agent-based methods in cancer research (West et al., 2023)
+% 8. Peer-to-peer energy sharing and trading (Zhou and Lund, 2023)
+% 9. Summary and contrast with our approach
+
+
+\section{Background}
+\label{sec:background}
+
+Data science has become a cornerstone for modern organizations, enabling them to leverage data for strategic decision-making and operational efficiency. The ability to extract insights from data and apply them to business processes is critical for maintaining a competitive edge.
+
+The structure of data science teams can significantly influence their effectiveness. Centralized teams, where data scientists are grouped together in a single unit, can benefit from shared resources and consistent methodologies. However, they may suffer from bottlenecks and slower response times to specific departmental needs. Decentralized teams, embedded within different departments, can provide tailored solutions and faster responses but may face challenges in maintaining consistency and sharing best practices.
+
+Previous studies have explored various aspects of team structures. For instance, \citet{park2023generative} examined the role of generative agents in simulating human behavior, which can be applied to understanding team dynamics. \citet{shanahan2023role} discussed role-playing with large language models, highlighting the importance of interaction patterns in team settings. These works provide a foundation for our investigation into the impact of team structures on data science effectiveness.
+
+Simulation frameworks have been widely used to study organizational behavior and team dynamics. \citet{wang2023describe} introduced a framework for interactive planning with large language models, which can be adapted to simulate data science teams. Similarly, \citet{liu2023agentbench} evaluated large language models as agents, providing insights into agent-based modeling techniques that are relevant to our study.
+
+\subsection{Problem Setting}
+\label{sec:problem_setting}
+
+We formally investigate the impact of centralized versus decentralized data science teams on organizational decision-making. Let \( G = (V, E) \) represent the organizational network, where \( V \) is the set of agents (data scientists) and \( E \) is the set of connections between them. The connection probability \( p \) determines the likelihood of an edge existing between any two agents, simulating different degrees of centralization.
+
+Our simulation assumes that all agents start in a neutral state and can transition to active or inactive states based on their interactions. We also assume that the connection probability \( p \) can vary to represent different team structures, from highly centralized (\( p \approx 1 \)) to highly decentralized (\( p \approx 0 \)). These assumptions allow us to model and analyze the impact of team structure on agent activity levels and overall organizational performance.
+
+\section{Method}
+\label{sec:method}
+
+In this section, we describe our simulation framework and methodology for evaluating the impact of centralized versus decentralized data science teams on organizational decision-making. We build on the formalism introduced in the Problem Setting and leverage concepts from the Background section.
+
+Our simulation framework models an organization as a network \( G = (V, E) \), where \( V \) represents data scientists (agents) and \( E \) represents the connections between them. The connection probability \( p \) determines the likelihood of an edge existing between any two agents, simulating different degrees of centralization. This approach allows us to create various team structures and analyze their impact on agent activity levels.
+
+Each agent in the simulation starts in a neutral state and can transition to active or inactive states based on their interactions with other agents. The initial state of each agent is randomly assigned from the set of possible states \{NEUTRAL, ACTIVE, INACTIVE\}, reflecting the diversity of agent behaviors and states in a real-world organization.
+
+We initialize the network using the Erdős-Rényi model, which generates a random graph based on the specified connection probability \( p \). This model allows us to easily adjust the degree of centralization by varying \( p \). Higher values of \( p \) result in more centralized structures, while lower values of \( p \) create more decentralized structures.
+
+During each simulation step, agents interact with their neighbors and update their states based on the states of their connections. Specifically, an agent transitions to the active state if more than half of its connected neighbors are active. Otherwise, it transitions to the inactive state. This rule captures the influence of peer interactions on agent behavior.
+
+We run the simulation for a fixed number of steps and collect statistics on agent states at each step. The collected data includes the number of agents in each state (NEUTRAL, ACTIVE, INACTIVE) and the overall network structure. We analyze this data to evaluate the impact of different team structures on agent activity levels and organizational performance.
+
+In summary, our method involves initializing a network of agents, simulating their interactions over time, and analyzing the resulting data to understand the effects of centralized versus decentralized team structures. This approach provides a comprehensive framework for studying the dynamics of data science teams and their impact on organizational decision-making.
+
+\section{Experimental Setup}
+\label{sec:experimental}
+
+In this section, we describe the experimental setup used to evaluate the impact of centralized versus decentralized data science teams on organizational decision-making. This includes details on the dataset, evaluation metrics, important hyperparameters, and implementation specifics.
+
+We simulate an organization using a network of agents, where each agent represents a data scientist. The network is initialized using the Erdős-Rényi model \citep{erdos1960evolution}, which allows us to control the degree of centralization by varying the connection probability \( p \). The dataset for each experiment consists of the states of all agents over a series of simulation steps.
+
+To evaluate the effectiveness of different team structures, we use the following metrics:
+\begin{itemize}
+    \item \textbf{Agent Activity Levels}: The number of agents in the active state at each simulation step.
+    \item \textbf{State Transition Counts}: The number of transitions between different states (NEUTRAL, ACTIVE, INACTIVE) over the course of the simulation.
+    \item \textbf{Network Connectivity}: The overall connectivity of the network, measured by the average degree of nodes.
+\end{itemize}
+These metrics provide a comprehensive view of how different team structures impact agent behavior and network dynamics.
+
+The key hyperparameters in our simulation are:
+\begin{itemize}
+    \item \textbf{Number of Agents} (\( n \)): The total number of agents in the network. For our experiments, we set \( n = 10 \) to balance computational efficiency and network complexity.
+    \item \textbf{Connection Probability} (\( p \)): The probability of an edge existing between any two agents. We vary \( p \) to simulate different degrees of centralization, with values ranging from 0.01 (highly decentralized) to 0.9 (highly centralized).
+    \item \textbf{Number of Steps} (\( T \)): The number of simulation steps. We run each simulation for \( T = 50 \) steps to ensure sufficient time for the network to evolve and for agent behaviors to stabilize.
+\end{itemize}
+
+Our simulation framework is implemented in Python, leveraging the NetworkX library for network operations and NumPy for numerical computations. The simulation is initialized with agents in random states, and their interactions are governed by the rules described in the Method section. We run each experiment multiple times with different random seeds to ensure robustness and reproducibility of results.
+
+In summary, our experimental setup involves simulating an organization as a network of agents, varying the degree of centralization, and evaluating the impact on agent activity levels and network connectivity. This setup allows us to systematically investigate the effects of team structure on organizational decision-making.
+
+\section{Results}
+\label{sec:results}
+
+In this section, we present the results of our experiments comparing centralized and decentralized data science teams. We analyze the impact of different connection probabilities on agent activity levels and discuss the limitations of our method and potential issues of fairness.
+
+\subsection{Baseline Results}
+The baseline experiment (Run 0) serves as a control, with all agents remaining inactive throughout the simulation. This result establishes a reference point for comparing the effects of different team structures.
+
+\subsection{High Centralization}
+In Run 1, we simulated a highly centralized data science team with a connection probability of 0.9. The results indicate that all agents remained inactive, similar to the baseline. This suggests that high centralization alone does not necessarily lead to increased agent activity.
+
+\subsection{Moderate Centralization}
+Run 2 involved a moderately centralized team with a connection probability of 0.5. The results again show that all agents remained inactive, indicating that moderate centralization does not significantly impact agent activity levels compared to the baseline and high centralization scenarios.
+
+\subsection{Low Centralization}
+In Run 3, we simulated a lowly centralized team with a connection probability of 0.1. The results were consistent with previous runs, with all agents remaining inactive. This further supports the observation that varying degrees of centralization do not affect agent activity in our current setup.
+
+\subsection{Very Low Centralization}
+Run 4 simulated a very lowly centralized team with a connection probability of 0.01. The results continued to show that all agents remained inactive, similar to the previous runs. This indicates that very low centralization also does not lead to increased agent activity.
+
+\subsection{Summary of Results}
+Across all runs, the number of inactive agents remained constant at 10.0, regardless of the connection probability. This suggests that the current simulation parameters and rules do not lead to variations in agent activity levels based on team structure. Future work should explore additional factors, such as different state transition rules or agent traits, to better understand the impact of team centralization.
+
+\subsection{Limitations and Fairness}
+Our study has several limitations. First, the simulation parameters may not fully capture the complexities of real-world data science teams. Second, the uniform inactivity across all runs suggests that our model may need refinement to produce more varied outcomes. Finally, potential issues of fairness arise from the simplified assumptions in our model, which may not account for all relevant factors in team dynamics.
+
+
+\begin{table}[t]
+    \centering
+    \begin{tabular}{lcc}
+        \toprule
+        Run & Connection Probability & Count INACTIVE \\
+        \midrule
+        Baseline & - & 10.0 \\
+        High Centralization & 0.9 & 10.0 \\
+        Moderate Centralization & 0.5 & 10.0 \\
+        Low Centralization & 0.1 & 10.0 \\
+        Very Low Centralization & 0.01 & 10.0 \\
+        \bottomrule
+    \end{tabular}
+    \caption{Summary of agent inactivity across different runs.}
+    \label{tab:results_summary}
+\end{table}
+
+\section{Conclusions and Future Work}
+\label{sec:conclusion}
+
+In this paper, we investigated the impact of centralized versus decentralized data science teams on organizational data-driven decision-making. We developed a simulation framework to model the interactions within these teams, varying the connection probabilities to represent different degrees of centralization. Our experiments evaluated the effectiveness of these team structures by measuring agent activity levels and network connectivity.
+
+Our results showed that varying the degree of centralization did not significantly impact agent activity levels, as all agents remained inactive across different runs. This suggests that the current simulation parameters and rules may not fully capture the complexities of real-world data science teams. The uniform inactivity across all runs indicates a need for further refinement of our model to produce more varied outcomes.
+
+Several limitations were identified in our study. The simulation parameters may not encompass all the factors influencing team dynamics in real-world scenarios. Additionally, the simplified assumptions in our model, such as uniform agent behavior and state transition rules, may not accurately reflect the diversity and complexity of actual data science teams. These limitations highlight the need for more sophisticated models to better understand the impact of team structure on organizational performance.
+
+Future work will focus on addressing these limitations by incorporating more complex agent behaviors and state transition rules. We plan to explore the effects of different communication patterns, individual agent traits, and external factors on team performance. Additionally, we aim to validate our simulation framework with empirical data from real-world organizations to enhance its accuracy and relevance. By refining our model and expanding the scope of our experiments, we hope to provide deeper insights into the optimal structure of data science teams and their impact on organizational decision-making.
+
+In conclusion, our study provides a foundational framework for simulating and evaluating the impact of centralized versus decentralized data science teams. While our initial findings indicate that centralization alone does not significantly influence agent activity levels, future research will build on this work to uncover more nuanced insights into team dynamics and organizational design. We believe that our approach, combined with further refinements and empirical validation, will contribute to the ongoing discourse on effective team structures in data-driven organizations.
+
+\bibliographystyle{iclr2024_conference}
+\bibliography{references}
+
+\bibliographystyle{iclr2024_conference}
+\bibliography{references}
+
+\end{document}

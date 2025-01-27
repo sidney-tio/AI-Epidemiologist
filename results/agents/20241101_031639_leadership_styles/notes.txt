@@ -1,0 +1,5 @@
+# Title: How does leadership styles effect workers in Tech Firms?
+# Experiment description: In this experiment, we compare how different leadership styles effect the productivity of tech workers, across different range of organisations.
+## Run 0: Baseline
+Results: {'run': {'count_INACTIVE': 10.0}}
+Description: Baseline results.

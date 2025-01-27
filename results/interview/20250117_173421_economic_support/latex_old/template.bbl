@@ -1,0 +1,41 @@
+\begin{thebibliography}{5}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Park et~al.(2023)Park, O'Brien, Cai, Morris, Liang, and
+  Bernstein]{park2023generative}
+Joon~Sung Park, Joseph O'Brien, Carrie~Jun Cai, Meredith~Ringel Morris, Percy
+  Liang, and Michael~S Bernstein.
+\newblock Generative agents: Interactive simulacra of human behavior.
+\newblock In \emph{Proceedings of the 36th annual acm symposium on user
+  interface software and technology}, pp.\  1--22, 2023.
+
+\bibitem[Poledna et~al.(2023)Poledna, Miess, Hommes, and
+  Rabitsch]{poledna2023economic}
+Sebastian Poledna, Michael~Gregor Miess, Cars Hommes, and Katrin Rabitsch.
+\newblock Economic forecasting with an agent-based model.
+\newblock \emph{European Economic Review}, 151:\penalty0 104306, 2023.
+
+\bibitem[Shanahan et~al.(2023)Shanahan, McDonell, and
+  Reynolds]{shanahan2023role}
+Murray Shanahan, Kyle McDonell, and Laria Reynolds.
+\newblock Role play with large language models.
+\newblock \emph{Nature}, 623\penalty0 (7987):\penalty0 493--498, 2023.
+
+\bibitem[West et~al.(2023)West, Robertson-Tessi, and Anderson]{west2023agent}
+Jeffrey West, Mark Robertson-Tessi, and Alexander~RA Anderson.
+\newblock Agent-based methods facilitate integrative science in cancer.
+\newblock \emph{Trends in cell biology}, 33\penalty0 (4):\penalty0 300--311,
+  2023.
+
+\bibitem[Zhou \& Lund(2023)Zhou and Lund]{zhou2023peer}
+Yuekuan Zhou and Peter~D Lund.
+\newblock Peer-to-peer energy sharing and trading of renewable energy in smart
+  communities─ trading pricing models, decision-making and agent-based
+  collaboration.
+\newblock \emph{Renewable Energy}, 207:\penalty0 177--193, 2023.
+
+\end{thebibliography}

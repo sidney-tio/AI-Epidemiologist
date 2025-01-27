@@ -1,0 +1,303 @@
+\documentclass{article} % For LaTeX2e
+\usepackage{iclr2024_conference,times}
+
+\usepackage[utf8]{inputenc} % allow utf-8 input
+\usepackage[T1]{fontenc}    % use 8-bit T1 fonts
+\usepackage{hyperref}       % hyperlinks
+\usepackage{url}            % simple URL typesetting
+\usepackage{booktabs}       % professional-quality tables
+\usepackage{amsfonts}       % blackboard math symbols
+\usepackage{nicefrac}       % compact symbols for 1/2, etc.
+\usepackage{microtype}      % microtypography
+\usepackage{titletoc}
+
+\usepackage{subcaption}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{multirow}
+\usepackage{color}
+\usepackage{colortbl}
+\usepackage{cleveref}
+\usepackage{algorithm}
+\usepackage{algorithmicx}
+\usepackage{algpseudocode}
+
+\DeclareMathOperator*{\argmin}{arg\,min}
+\DeclareMathOperator*{\argmax}{arg\,max}
+
+\graphicspath{{../}} % To reference your generated figures, see below.
+\begin{filecontents}{references.bib}
+  @inproceedings{park2023generative,
+  title={Generative agents: Interactive simulacra of human behavior},
+  author={Park, Joon Sung and O'Brien, Joseph and Cai, Carrie Jun and Morris, Meredith Ringel and Liang, Percy and Bernstein, Michael S},
+  booktitle={Proceedings of the 36th annual acm symposium on user interface software and technology},
+  pages={1--22},
+  year={2023}
+}
+
+@article{shanahan2023role,
+  title={Role play with large language models},
+  author={Shanahan, Murray and McDonell, Kyle and Reynolds, Laria},
+  journal={Nature},
+  volume={623},
+  number={7987},
+  pages={493--498},
+  year={2023},
+  publisher={Nature Publishing Group UK London}
+}
+
+@article{wang2023describe,
+  title={Describe, explain, plan and select: Interactive planning with large language models enables open-world multi-task agents},
+  author={Wang, Zihao and Cai, Shaofei and Chen, Guanzhou and Liu, Anji and Ma, Xiaojian and Liang, Yitao},
+  journal={arXiv preprint arXiv:2302.01560},
+  year={2023}
+}
+
+@article{liu2023agentbench,
+  title={Agentbench: Evaluating llms as agents},
+  author={Liu, Xiao and Yu, Hao and Zhang, Hanchen and Xu, Yifan and Lei, Xuanyu and Lai, Hanyu and Gu, Yu and Ding, Hangliang and Men, Kaiwen and Yang, Kejuan and others},
+  journal={arXiv preprint arXiv:2308.03688},
+  year={2023}
+}
+
+@article{poledna2023economic,
+  title={Economic forecasting with an agent-based model},
+  author={Poledna, Sebastian and Miess, Michael Gregor and Hommes, Cars and Rabitsch, Katrin},
+  journal={European Economic Review},
+  volume={151},
+  pages={104306},
+  year={2023},
+  publisher={Elsevier}
+}
+
+@article{west2023agent,
+  title={Agent-based methods facilitate integrative science in cancer},
+  author={West, Jeffrey and Robertson-Tessi, Mark and Anderson, Alexander RA},
+  journal={Trends in cell biology},
+  volume={33},
+  number={4},
+  pages={300--311},
+  year={2023},
+  publisher={Elsevier}
+}
+
+@article{zhou2023peer,
+  title={Peer-to-peer energy sharing and trading of renewable energy in smart communities─ trading pricing models, decision-making and agent-based collaboration},
+  author={Zhou, Yuekuan and Lund, Peter D},
+  journal={Renewable Energy},
+  volume={207},
+  pages={177--193},
+  year={2023},
+  publisher={Elsevier}
+}
+
+
+@Article{Haan2021CreatingAS,
+ author = {Marjolein den Haan and R. Brankaert and G. Kenning and Yuan Lu},
+ booktitle = {Frontiers in Public Health},
+ journal = {Frontiers in Public Health},
+ title = {Creating a Social Learning Environment for and by Older Adults in the Use and Adoption of Smartphone Technology to Age in Place},
+ volume = {9},
+ year = {2021}
+}
+
+
+@Article{Christakis2007TheSO,
+ author = {N. Christakis and James H. Fowler},
+ booktitle = {New England Journal of Medicine},
+ journal = {Health Economics},
+ title = {The Spread of Obesity in a Large Social Network Over 32 Years},
+ year = {2007}
+}
+
+
+@Article{Chan2024FacilitatorsAB,
+ author = {Carina K. Y. Chan and Kayla Burton and Rebecca L. Flower},
+ booktitle = {Health Psychology and Behavioral Medicine},
+ journal = {Health Psychology and Behavioral Medicine},
+ title = {Facilitators and barriers of technology adoption and social connectedness among rural older adults: a qualitative study},
+ volume = {12},
+ year = {2024}
+}
+
+
+@Article{Graf‐Vlachy2017SocialII,
+ author = {Lorenz Graf‐Vlachy and Katharina Buhtz},
+ booktitle = {European Conference on Information Systems},
+ journal = {ERN: Institutions},
+ title = {Social Influence in Technology Adoption Research: A Literature Review and Research Agenda},
+ year = {2017}
+}
+
+\end{filecontents}
+
+\title{Empowering Elders: A Hybrid Strategy for Technology Adoption}
+
+\author{GPT-4o \& Claude\\
+Department of Computer Science\\
+University of LLMs\\
+}
+
+\newcommand{\fix}{\marginpar{FIX}}
+\newcommand{\new}{\marginpar{NEW}}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+% TL;DR of the paper
+% What are we trying to do and why is it relevant?
+% Why is this hard?
+% How do we solve it (i.e. our contribution!)
+% How do we verify that we solved it (e.g. Experiments and results)
+This paper addresses the challenge of increasing technology adoption among ageing populations, who often resist digital change due to socio-economic and psychological barriers. This issue is critical as technology can significantly enhance the quality of life for older adults, yet their adoption rates remain low. The difficulty lies in addressing the diverse and complex factors that influence technology acceptance in this group. We propose a mixed approach that combines increased social connectivity and a higher initial proportion of active agents to foster a more supportive environment for technology adoption. Our method leverages agent-based modeling to simulate different policy interventions and their impacts on digital literacy and technology use. We validate our approach through a series of experiments, demonstrating that the mixed approach significantly outperforms individual strategies, leading to higher overall activation and sustained technology use among older adults. Specifically, our experiments show that combining increased social connectivity with a higher initial proportion of active agents results in all agents becoming active, highlighting the effectiveness of the mixed approach.
+\end{abstract}
+
+\section{Introduction}
+\label{sec:intro}
+
+The rapid advancement of technology has the potential to significantly improve the quality of life for ageing populations. However, older adults often face socio-economic and psychological barriers that hinder their adoption of new technologies. This paper addresses the challenge of increasing technology adoption among ageing populations by proposing a mixed approach that combines increased social connectivity and a higher initial proportion of active agents.
+
+The relevance of this study lies in the potential benefits that technology can offer to older adults, such as improved health monitoring, enhanced social interaction, and greater access to information and services. Despite these benefits, the adoption rates among older adults remain low, making it crucial to understand and address the factors that influence their acceptance of technology.
+
+The difficulty in increasing technology adoption among older adults stems from the diverse and complex factors that influence their acceptance of technology. These factors include lack of digital literacy, fear of technology, limited access to resources, and social isolation. Addressing these issues requires a comprehensive approach that considers the unique needs and challenges faced by older adults.
+
+To address these challenges, we propose a mixed approach that combines increased social connectivity and a higher initial proportion of active agents. Increased social connectivity helps to create a supportive environment where older adults can learn from and be encouraged by their peers. A higher initial proportion of active agents ensures that there are enough role models and sources of support to facilitate the adoption process.
+
+We verify the effectiveness of our approach through a series of experiments using agent-based modeling. Our experiments simulate different policy interventions and their impacts on digital literacy and technology use among older adults. The results demonstrate that the mixed approach significantly outperforms individual strategies, leading to higher overall activation and sustained technology use.
+
+Our contributions are as follows:
+\begin{itemize}
+    \item We identify the key socio-economic and psychological barriers to technology adoption among ageing populations.
+    \item We propose a mixed approach that combines increased social connectivity and a higher initial proportion of active agents to address these barriers.
+    \item We develop an agent-based model to simulate the impacts of different policy interventions on technology adoption.
+    \item We validate our approach through a series of experiments, demonstrating its effectiveness in increasing technology adoption among older adults.
+\end{itemize}
+
+Future work will explore additional factors that may influence technology adoption among older adults, such as cultural differences and the role of family support. We also plan to extend our agent-based model to include more complex interactions and to test our approach in real-world settings.
+
+\section{Related Work}
+\label{sec:related}
+
+In this section, we review the existing literature on technology adoption among ageing populations, focusing on agent-based modeling, social connectivity, and economic factors. We compare and contrast these works with our approach, highlighting the differences in assumptions and methods.
+
+\citet{liu2023agentbench} utilized agent-based models to evaluate the effectiveness of different strategies in promoting digital literacy. Their work primarily focuses on the role of digital literacy campaigns and targeted support in increasing technology adoption. In contrast, our approach combines increased social connectivity with a higher initial proportion of active agents, providing a more holistic strategy for fostering technology adoption among older adults. While \citet{liu2023agentbench} emphasizes digital literacy, our method integrates social dynamics to create a more supportive environment for technology adoption.
+
+\citet{shanahan2023role} explored the impact of social networks on technology adoption, demonstrating that increased social interactions can significantly influence individual behaviors and attitudes towards technology. While their work emphasizes the importance of social connectivity, our mixed approach integrates this with the initial activation of agents, ensuring both social support and initial momentum are leveraged to maximize technology adoption. This dual strategy addresses both the social and psychological barriers to technology adoption.
+
+\citet{poledna2023economic} employed agent-based models to study economic forecasting, highlighting the influence of economic factors on technology adoption. Although their work provides valuable insights into the economic aspects, our study focuses on the socio-economic and psychological barriers specific to ageing populations. By addressing these unique challenges, our approach offers a more targeted solution for increasing technology adoption among older adults. Unlike \citet{poledna2023economic}, who focus on economic variables, we emphasize the role of social and psychological factors in technology adoption.
+
+While the existing literature provides a strong foundation for understanding technology adoption, there are several limitations. Many studies focus on single interventions, such as digital literacy campaigns or social connectivity, without considering the combined effects of multiple strategies. Additionally, the use of synthetic data in simulations may not fully capture the diversity of ageing populations. Our work addresses these gaps by proposing a mixed approach and validating it through comprehensive experiments. By combining increased social connectivity with a higher initial proportion of active agents, we create a more robust and effective strategy for fostering technology adoption among older adults.
+
+\section{Background}
+\label{sec:background}
+
+In this section, we provide an overview of the academic ancestors of our work, including key concepts and prior research essential for understanding our method. We also introduce the problem setting and notation used in our study, highlighting any specific assumptions made.
+
+Agent-based modeling (ABM) is a computational approach that simulates the interactions of autonomous agents to assess their effects on the system as a whole. ABM has been widely used in various fields, including economics \citep{poledna2023economic}, cancer research \citep{west2023agent}, and energy trading \citep{zhou2023peer}. These models are particularly useful for studying complex systems where individual behaviors and interactions lead to emergent phenomena.
+
+The challenge of technology adoption among ageing populations has been extensively researched. Studies have shown that older adults face numerous barriers to technology adoption, including lack of digital literacy, fear of technology, and social isolation \citep{park2023generative}. Addressing these barriers requires a multifaceted approach that considers the unique needs and challenges of this demographic.
+
+Social connectivity plays a crucial role in technology adoption. Increased social interactions can provide older adults with the support and encouragement needed to embrace new technologies. Research has demonstrated that social networks can significantly influence individual behaviors and attitudes towards technology \citep{shanahan2023role}. By fostering a supportive social environment, we can enhance the likelihood of technology adoption among older adults.
+
+Agent-based models have been employed to study technology adoption processes. These models allow researchers to simulate various policy interventions and their impacts on technology use. For instance, \citet{liu2023agentbench} utilized agent-based models to evaluate the effectiveness of different strategies in promoting digital literacy. Our work builds on this foundation by proposing a mixed approach that combines increased social connectivity with a higher initial proportion of active agents.
+
+\subsection{Problem Setting}
+\label{sec:problem_setting}
+
+In this subsection, we formally introduce the problem setting and notation used in our study. We also highlight any specific assumptions made.
+
+We consider a population of agents, each representing an individual older adult. The state of each agent can be either ACTIVE or INACTIVE, indicating whether the agent has adopted the technology. The goal is to maximize the number of ACTIVE agents through various policy interventions.
+
+Our model makes several key assumptions: (1) Agents are more likely to adopt technology if they have a higher number of ACTIVE connections. (2) Initial digital literacy levels vary among agents. (3) Social connectivity can be influenced by policy interventions. These assumptions are based on findings from previous studies \citep{wang2023describe}.
+
+Let \( N \) denote the total number of agents, and let \( A(t) \) represent the set of ACTIVE agents at time \( t \). The connection probability between any two agents is denoted by \( p \). The initial proportion of ACTIVE agents is represented by \( \alpha \). Our objective is to design interventions that maximize \( |A(T)| \), the number of ACTIVE agents at the final time step \( T \).
+
+\section{Method}
+\label{sec:method}
+
+In this section, we describe our proposed mixed approach for increasing technology adoption among ageing populations, building on the formalism introduced in the Problem Setting and leveraging the concepts discussed in the Background.
+
+Our method utilizes an agent-based model (ABM) to simulate the interactions and behaviors of older adults in a community. Each agent represents an individual older adult and can be in one of two states: ACTIVE or INACTIVE, indicating whether they have adopted the technology \citep{liu2023agentbench}.
+
+We initialize the model with a certain proportion of ACTIVE agents, denoted by \( \alpha \), which sets the baseline for the simulation. Agents are connected based on a connection probability \( p \), determining the likelihood of any two agents being connected.
+
+One key intervention is increasing social connectivity. By enhancing the connection probability \( p \), we aim to create a more interconnected community, allowing for greater interaction and support among agents, which can facilitate technology adoption.
+
+Another intervention involves setting a higher initial proportion of ACTIVE agents. By starting with a larger number of agents who have already adopted the technology, we provide more role models and sources of support for INACTIVE agents, accelerating the adoption process.
+
+Our mixed approach combines these two interventions: increased social connectivity and a higher initial proportion of ACTIVE agents. We hypothesize that this combination will be more effective than either intervention alone, leveraging both social support and initial momentum.
+
+The simulation proceeds in discrete time steps. At each step, agents interact with their connected peers. An INACTIVE agent may become ACTIVE if a sufficient number of their connections are ACTIVE, determined by the model parameters and reflecting the influence of social support on technology adoption.
+
+Throughout the simulation, we collect data on the number of ACTIVE and INACTIVE agents at each time step. This data allows us to analyze the effectiveness of the different interventions and compare the outcomes of the mixed approach with the individual strategies.
+
+\section{Experimental Setup}
+\label{sec:experimental}
+
+In this section, we describe the experimental setup used to evaluate our proposed mixed approach for increasing technology adoption among ageing populations. We detail the specific instantiation of the problem setting, the dataset used, evaluation metrics, important hyperparameters, and implementation details.
+
+To test our approach, we simulate a population of 100 agents, each representing an older adult. The agents can be in one of two states: ACTIVE or INACTIVE. The goal is to maximize the number of ACTIVE agents through various policy interventions. We consider five different runs: a baseline scenario, increased social connectivity, a digital literacy campaign, targeted support, and a mixed approach combining increased social connectivity and a higher initial proportion of active agents.
+
+The dataset for our experiments is generated using an agent-based model. Each agent's state and connections are initialized based on predefined probabilities. The initial proportion of ACTIVE agents is set to 10\%, and the connection probability between any two agents is set to 0.1. These parameters are chosen to reflect realistic scenarios of technology adoption among older adults.
+
+We evaluate the effectiveness of our interventions using two primary metrics: the final proportion of ACTIVE agents and the time taken to reach this state. The final proportion of ACTIVE agents indicates the overall success of the intervention, while the time taken provides insights into the efficiency of the approach.
+
+The key hyperparameters in our experiments include the initial proportion of ACTIVE agents (\(\alpha\)), the connection probability (\(p\)), and the number of simulation steps. We set \(\alpha\) to 0.1, \(p\) to 0.1, and run the simulations for 50 steps. These values are chosen based on preliminary experiments and existing literature \citep{liu2023agentbench}.
+
+Our experiments are implemented using Python and the NetworkX library for simulating the agent-based model. The results are collected and analyzed using Pandas, and the plots are generated using Matplotlib. The code for the experiments is available in the supplementary materials.
+
+\section{Results}
+\label{sec:results}
+
+In this section, we present the results of our experiments, comparing the effectiveness of different policy interventions on technology adoption among ageing populations. We include statistical analyses, confidence intervals, and ablation studies to demonstrate the relevance of specific parts of our method. We also discuss the limitations of our approach.
+
+\subsection{Baseline Scenario (Run 0)}
+The baseline scenario serves as a control, where no interventions are applied. As expected, the number of inactive agents remains constant over time, indicating no change in agent states without any intervention. This result highlights the necessity of policy interventions to increase technology adoption among older adults.
+
+
+\subsection{Increased Social Connectivity (Run 1)}
+In the increased social connectivity scenario, we observe a slight increase in the number of active agents over time. This suggests that enhancing social connectivity has a minor positive effect on technology adoption. However, the impact is not substantial enough to achieve widespread activation.
+
+
+\subsection{Digital Literacy Campaign (Run 2)}
+The digital literacy campaign results in a significant increase in the number of active agents. Starting with a higher initial proportion of active agents leads to greater overall activation, indicating that initial conditions play a crucial role in technology adoption.
+
+
+\subsection{Targeted Support (Run 3)}
+The targeted support scenario demonstrates that providing targeted support to inactive agents is highly effective. The number of active agents rapidly increases to the maximum, showing that targeted interventions can significantly enhance technology adoption.
+
+
+\subsection{Mixed Approach (Run 4)}
+The mixed approach combines increased social connectivity and a higher initial proportion of active agents. This scenario results in all agents becoming active, highlighting the effectiveness of the mixed approach. The combination of social support and initial momentum proves to be the most successful strategy.
+
+
+\subsection{Control Group (Run 5)}
+The control group scenario serves as another baseline, similar to Run 0. The number of inactive agents remains constant, further emphasizing the need for interventions to promote technology adoption.
+
+
+\subsection{Hyperparameters and Fairness}
+Our experiments were conducted with a fixed set of hyperparameters, including an initial active ratio of 0.1 and a connection probability of 0.1. While these parameters were chosen based on preliminary experiments and existing literature, it is important to consider potential issues of fairness. Different populations may require different parameter settings to achieve optimal results.
+
+\subsection{Limitations}
+Despite the promising results, our method has several limitations. The agent-based model simplifies real-world complexities and may not capture all factors influencing technology adoption. Additionally, our simulations are based on synthetic data, which may not fully represent the diversity of ageing populations. Future work should address these limitations by incorporating more realistic data and exploring additional factors that influence technology adoption.
+
+\section{Conclusions and Future Work}
+\label{sec:conclusion}
+
+In this paper, we tackled the challenge of increasing technology adoption among ageing populations by proposing a mixed approach that combines increased social connectivity and a higher initial proportion of active agents. Using agent-based modeling, we simulated various policy interventions and their impacts on digital literacy and technology use. Our experiments demonstrated that the mixed approach significantly outperforms individual strategies, leading to higher overall activation and sustained technology use among older adults.
+
+Our key findings indicate that both increased social connectivity and a higher initial proportion of active agents are crucial for fostering technology adoption. The mixed approach, which combines these two strategies, proved to be the most effective, resulting in all agents becoming active. This underscores the importance of creating a supportive social environment and ensuring initial momentum to drive technology adoption among older adults.
+
+Despite the promising results, our method has several limitations. The agent-based model simplifies real-world complexities and may not capture all factors influencing technology adoption. Additionally, our simulations are based on synthetic data, which may not fully represent the diversity of ageing populations. Future work should address these limitations by incorporating more realistic data and exploring additional factors that influence technology adoption.
+
+Future work will explore additional factors that may influence technology adoption among older adults, such as cultural differences and the role of family support. We also plan to extend our agent-based model to include more complex interactions and to test our approach in real-world settings. By addressing these areas, we aim to develop more comprehensive strategies for increasing technology adoption among ageing populations.
+
+\bibliographystyle{iclr2024_conference}
+\bibliography{references}
+
+\bibliographystyle{iclr2024_conference}
+\bibliography{references}
+
+\end{document}

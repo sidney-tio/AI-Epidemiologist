@@ -1,0 +1,9 @@
+Name: Jane Smith
+Background: Nurse
+Current Role: Healthcare Professional
+Expertise: Geriatric Care, Healthcare Technology
+Relevance to current Topic: Jane works with older adults and has firsthand experience with the challenges they face in adopting new technologies. She can provide insights into how technology impacts their health and well-being.
+
+Personality Traits: Compassionate, Observant, Practical
+
+Personal Philosophy: "Technology should be a bridge to better care, not a barrier. It's essential to integrate it thoughtfully into the lives of older adults."

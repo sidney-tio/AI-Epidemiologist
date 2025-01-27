@@ -1,0 +1,64 @@
+# Title: Loneliness, the Social Epidemic
+# Experiment description: In this experiment, we explore different policies in helping societies to decrease social isolation.
+## Run 0: Baseline
+Results: {'run': {'count_INACTIVE': 10.0}}
+Description: Baseline results.
+
+## Run 1: Increase Connection Probability
+Results: {'run': {'count_INACTIVE': 10.0}}
+Description: In this run, we increased the connection probability to 0.3 to see if more connections help reduce social isolation. The results were the same as the baseline, indicating that increasing the connection probability did not affect the count of inactive agents.
+
+## Run 2: Decrease Connection Probability
+Results: {'run': {'count_INACTIVE': 10.0}}
+Description: In this run, we decreased the connection probability to 0.05 to see if fewer connections would increase social isolation. The results were the same as the baseline, indicating that decreasing the connection probability did not affect the count of inactive agents.
+
+## Run 3: Increase Initial Active Agents to 50%
+Results: {'run': {'count_INACTIVE': 10.0}}
+Description: In this run, we increased the initial number of active agents to 50% to see if a higher initial activity level would reduce social isolation. The results were the same as the baseline, indicating that increasing the initial number of active agents did not affect the count of inactive agents.
+
+## Run 4: Decrease Initial Active Agents to 10%
+Results: {'run': {'count_INACTIVE': 10.0}}
+Description: In this run, we decreased the initial number of active agents to 10% to see if a lower initial activity level would increase social isolation. The results were the same as the baseline, indicating that decreasing the initial number of active agents did not affect the count of inactive agents.
+
+# Plot Descriptions
+## Baseline (run_0)
+Filename: agent_run_0_count_ACTIVE.jpg
+Description: This plot shows the number of active agents over time in the baseline scenario. The number of active agents remains constant, indicating no change in social isolation.
+
+Filename: agent_run_0_count_INACTIVE.jpg
+Description: This plot shows the number of inactive agents over time in the baseline scenario. The number of inactive agents remains constant, indicating no change in social isolation.
+
+## Increase Connection Probability (run_1)
+Filename: agent_run_1_count_ACTIVE.jpg
+Description: This plot shows the number of active agents over time when the connection probability is increased to 0.3. The number of active agents remains constant, indicating that increasing the connection probability did not affect social isolation.
+
+Filename: agent_run_1_count_INACTIVE.jpg
+Description: This plot shows the number of inactive agents over time when the connection probability is increased to 0.3. The number of inactive agents remains constant, indicating that increasing the connection probability did not affect social isolation.
+
+## Decrease Connection Probability (run_2)
+Filename: agent_run_2_count_ACTIVE.jpg
+Description: This plot shows the number of active agents over time when the connection probability is decreased to 0.05. The number of active agents remains constant, indicating that decreasing the connection probability did not affect social isolation.
+
+Filename: agent_run_2_count_INACTIVE.jpg
+Description: This plot shows the number of inactive agents over time when the connection probability is decreased to 0.05. The number of inactive agents remains constant, indicating that decreasing the connection probability did not affect social isolation.
+
+## Increase Initial Active Agents to 50% (run_3)
+Filename: agent_run_3_count_ACTIVE.jpg
+Description: This plot shows the number of active agents over time when the initial number of active agents is increased to 50%. The number of active agents remains constant, indicating that increasing the initial number of active agents did not affect social isolation.
+
+Filename: agent_run_3_count_INACTIVE.jpg
+Description: This plot shows the number of inactive agents over time when the initial number of active agents is increased to 50%. The number of inactive agents remains constant, indicating that increasing the initial number of active agents did not affect social isolation.
+
+## Decrease Initial Active Agents to 10% (run_4)
+Filename: agent_run_4_count_ACTIVE.jpg
+Description: This plot shows the number of active agents over time when the initial number of active agents is decreased to 10%. The number of active agents remains constant, indicating that decreasing the initial number of active agents did not affect social isolation.
+
+Filename: agent_run_4_count_INACTIVE.jpg
+Description: This plot shows the number of inactive agents over time when the initial number of active agents is decreased to 10%. The number of inactive agents remains constant, indicating that decreasing the initial number of active agents did not affect social isolation.
+
+## Increase Connection Probability to 0.5 (run_5)
+Filename: agent_run_5_count_ACTIVE.jpg
+Description: This plot shows the number of active agents over time when the connection probability is increased to 0.5. The number of active agents remains constant, indicating that increasing the connection probability did not affect social isolation.
+
+Filename: agent_run_5_count_INACTIVE.jpg
+Description: This plot shows the number of inactive agents over time when the connection probability is increased to 0.5. The number of inactive agents remains constant, indicating that increasing the connection probability did not affect social isolation.

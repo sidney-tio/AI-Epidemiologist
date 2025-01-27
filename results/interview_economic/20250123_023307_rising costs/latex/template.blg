@@ -1,0 +1,50 @@
+This is BibTeX, Version 0.99d (TeX Live 2024)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: template.aux
+The style file: iclr2024_conference.bst
+Database file #1: references.bib
+Warning--I didn't find a database entry for "sahu2024artificial"
+Warning--I didn't find a database entry for "liu2024interactive"
+Warning--empty booktitle in Bearman2019FocusOM
+You've used 8 entries,
+            2773 wiz_defined-function locations,
+            644 strings with 6532 characters,
+and the built_in function-call counts, 4187 in all, are:
+= -- 350
+> -- 309
+< -- 5
++ -- 104
+- -- 96
+* -- 363
+:= -- 666
+add.period$ -- 24
+call.type$ -- 8
+change.case$ -- 55
+chr.to.int$ -- 8
+cite$ -- 17
+duplicate$ -- 169
+empty$ -- 299
+format.name$ -- 108
+if$ -- 853
+int.to.chr$ -- 1
+int.to.str$ -- 1
+missing$ -- 8
+newline$ -- 48
+num.names$ -- 32
+pop$ -- 104
+preamble$ -- 1
+purify$ -- 47
+quote$ -- 0
+skip$ -- 141
+stack$ -- 0
+substring$ -- 124
+swap$ -- 14
+text.length$ -- 2
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 88
+warning$ -- 1
+while$ -- 33
+width$ -- 0
+write$ -- 108
+(There were 3 warnings)

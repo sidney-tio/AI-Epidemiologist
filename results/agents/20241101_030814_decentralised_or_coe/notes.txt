@@ -1,0 +1,21 @@
+# Title: Divide and Conquer or Conquer and Divide?
+# Experiment description: In this experiment, we compare how centralised or decentralised data science teams help organisations become more data driven. We simulate these interactions at organisations of different characteristics and evaluate the results.
+## Run 0: Baseline
+Results: {'run': {'count_INACTIVE': 10.0}}
+Description: Baseline results.
+
+## Run 1: High Centralization
+Results: {'run': {'count_INACTIVE': 10.0}}
+Description: In this run, we simulated a highly centralized data science team with a connection probability of 0.9. The results indicate that all agents remained inactive, similar to the baseline.
+
+## Run 2: Moderate Centralization
+Results: {'run': {'count_INACTIVE': 10.0}}
+Description: In this run, we simulated a moderately centralized data science team with a connection probability of 0.5. The results again indicate that all agents remained inactive, similar to the baseline and Run 1.
+
+## Run 3: Low Centralization
+Results: {'run': {'count_INACTIVE': 10.0}}
+Description: In this run, we simulated a lowly centralized data science team with a connection probability of 0.1. The results once again indicate that all agents remained inactive, similar to the baseline, Run 1, and Run 2.
+
+## Run 4: Very Low Centralization
+Results: {'run': {'count_INACTIVE': 10.0}}
+Description: In this run, we simulated a very lowly centralized data science team with a connection probability of 0.01. The results continue to show that all agents remained inactive, similar to the previous runs.

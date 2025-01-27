@@ -1,0 +1,65 @@
+[
+    {
+        "Name": "decentralised_or_coe",
+        "Title": "Divide and Conquer or Conquer and Divide?",
+        "Experiment": "In this experiment, we compare how centralised or decentralised data science teams help organisations become more data driven. We simulate these interactions at organisations of different characteristics and evaluate the results.",
+        "Interestingness": 7,
+        "Feasibility": 10,
+        "Novelty": 3,
+        "novel": true
+    },
+    {
+        "Name": "leadership_styles",
+        "Title": "How does leadership styles effect workers in Tech Firms?",
+        "Experiment": "In this experiment, we compare how different leadership styles effect the productivity of tech workers, across different range of organisations.",
+        "Interestingness": 4,
+        "Feasibility": 7,
+        "Novelty": 3,
+        "novel": true
+    },
+    {
+        "Name": "family_planning",
+        "Title": "Social Support in Child Rearing and Family Planning",
+        "Experiment": "In this experiment, we explore the role of social support in the child rearing process, and how it affects decisions to raise a child.",
+        "Interestingness": 8,
+        "Feasibility": 8,
+        "Novelty": 3,
+        "novel": true
+    },
+    {
+        "Name": "ai_adoption",
+        "Title": "Technology Adoption in Ageing Populations",
+        "Experiment": "In this experiment, we explore different policies in helping societies to increase their digital literacy and overall adoption of technology in their everyday lives.",
+        "Interestingness": 9,
+        "Feasibility": 8,
+        "Novelty": 3,
+        "novel": true
+    },
+    {
+        "Name": "loneliness",
+        "Title": "Loneliness, the Social Epidemic",
+        "Experiment": "In this experiment, we explore different policies in helping societies to decrease social isolation.",
+        "Interestingness": 9,
+        "Feasibility": 8,
+        "Novelty": 3,
+        "novel": true
+    },
+    {
+        "Name": "personality_influence",
+        "Title": "The Role of Personality Traits in Social Influence and Opinion Dynamics",
+        "Experiment": "In this experiment, we simulate a community where agents have varying levels of personality traits based on the Big Five (openness, conscientiousness, extraversion, agreeableness, neuroticism). We explore how these traits influence their susceptibility to social influence and the spread of opinions. The simulation will involve defining new agent traits, updating the agent interaction rules to incorporate these traits, and tracking the evolution of opinions over time. Specifically, agents with higher openness may be more susceptible to new opinions, while those with higher conscientiousness may be less likely to change their opinions. The results will be analyzed to understand the impact of personality traits on social influence and opinion dynamics.",
+        "Interestingness": 8,
+        "Feasibility": 9,
+        "Novelty": 7,
+        "novel": false
+    },
+    {
+        "Name": "stress_networks",
+        "Title": "Stress Networks: The Impact of Social Connections on Stress Reduction",
+        "Experiment": "This experiment explores the effect of social connections on stress levels within a community. Agents will have varying initial stress levels and coping traits such as resilience and social support-seeking behavior. The simulation will involve defining new agent traits for stress and coping mechanisms, modifying the update_agent function to incorporate these traits, and tracking the evolution of stress levels over time. Specifically, agents with higher social support and resilience are expected to show reduced stress levels, while isolated agents or those with low resilience may experience increased stress. The results will be analyzed to understand the role of social networks in stress reduction and mental health improvement.",
+        "Interestingness": 9,
+        "Feasibility": 8,
+        "Novelty": 8,
+        "novel": true
+    }
+]

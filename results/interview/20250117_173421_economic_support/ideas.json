@@ -1,0 +1,65 @@
+[
+    {
+        "Name": "family_planning",
+        "Title": "Social Support in Child Rearing and Family Planning",
+        "Experiment": "We explore the role of social support in the child rearing process, and how it affects decisions to raise a child in Japan. We discuss a policy to subsidize housing for individuals to live near their families, and also increased paternity leave for fathers.",
+        "Interestingness": 8,
+        "Feasibility": 8,
+        "Novelty": 3,
+        "novel": true
+    },
+    {
+        "Name": "ai_adoption",
+        "Title": "Technology Adoption in Ageing Populations",
+        "Experiment": "We explore different policies in helping societies to increase their digital literacy and overall adoption of technology in their everyday lives.",
+        "Interestingness": 9,
+        "Feasibility": 8,
+        "Novelty": 3,
+        "novel": true
+    },
+    {
+        "Name": "loneliness",
+        "Title": "Loneliness, the Social Epidemic",
+        "Experiment": "We explore different policies in helping societies to decrease social isolation.",
+        "Interestingness": 9,
+        "Feasibility": 8,
+        "Novelty": 3,
+        "novel": false
+    },
+    {
+        "Name": "economic_support",
+        "Title": "Comprehensive Economic and Work-Life Support for Young Families",
+        "Experiment": "We explore the potential of a comprehensive policy that includes financial incentives, educational subsidies, and work-life balance support to promote family formation and child-rearing in Japan. The policy includes baby bonuses, childcare subsidies, tax breaks for families, scholarships or reduced tuition fees for parents, flexible working hours, remote work options, and extended parental leave for both parents. Additionally, a public awareness campaign will inform young couples and single parents about the available support. We aim to learn how these measures can alleviate financial pressures, improve work-life balance, and encourage younger generations to start or expand their families.",
+        "Interestingness": 9,
+        "Feasibility": 8,
+        "Novelty": 8,
+        "novel": true
+    },
+    {
+        "Name": "community_hubs",
+        "Title": "Family-Friendly Community Hubs: Enhancing Social Support for Young Families",
+        "Experiment": "We will explore the establishment of Family-Friendly Community Hubs in various regions. These hubs will offer daycare facilities, parenting workshops, family counseling services, social events, organized playdates, educational seminars on child development, and mental health support for parents. By providing a supportive community environment, we aim to reduce the isolation of young parents, share resources, and create a network of mutual aid. Partnerships with local businesses and non-profits will be pursued to enhance resources and sustainability. The policy will assess how such social support mechanisms influence decisions around marriage and childbirth. A phased implementation starting with pilot programs in select urban and rural areas will be used to gather data and refine the approach before broader rollout. Success metrics will include participation rates, community engagement levels, and observed impacts on marriage and childbirth rates.",
+        "Interestingness": 9,
+        "Feasibility": 8,
+        "Novelty": 8,
+        "novel": true
+    },
+    {
+        "Name": "urban_family_zones",
+        "Title": "Family-Friendly Urban Zones: Integrating Urban Planning with Family Support",
+        "Experiment": "We will explore the establishment of Family-Friendly Urban Zones in high-cost urban areas. These zones will offer affordable housing, accessible childcare, family-oriented public spaces, and proximity to essential services such as schools and healthcare facilities. Collaboration with local governments, private sectors, and community engagement will be crucial for practical implementation and continuous improvement. The policy aims to make urban living more conducive to raising families, encouraging young couples to start or expand their families while staying in urban areas. Success will be evaluated based on increased birth rates, higher family satisfaction, and greater utilization of family-oriented services.",
+        "Interestingness": 9,
+        "Feasibility": 7,
+        "Novelty": 9,
+        "novel": true
+    },
+    {
+        "Name": "family_work_policies",
+        "Title": "Family-Centric Work Policies: Enhancing Work-Life Integration to Promote Family Formation",
+        "Experiment": "We will explore the implementation of Family-Centric Work Policies in various companies, initially as a pilot program. These policies include flexible working hours, telecommuting options, enhanced family leave policies, and in-office childcare facilities. The aim is to create a work environment that supports employees in balancing their career and family life. We will partner with a selection of small, medium, and large enterprises to pilot these policies and gather data on their effectiveness through employee surveys, interviews, and HR metrics. Metrics will include employee satisfaction, work-life balance, marriage and childbirth rates, and retention rates. The pilot program will run for one year, with periodic evaluations and adjustments. Successful policies will then be recommended for broader adoption. The study will provide insights into how workplace policies can influence family formation and employee well-being.",
+        "Interestingness": 9,
+        "Feasibility": 8,
+        "Novelty": 9,
+        "novel": true
+    }
+]

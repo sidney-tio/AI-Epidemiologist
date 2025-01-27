@@ -1,0 +1,29 @@
+\begin{thebibliography}{3}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Park et~al.(2023)Park, O'Brien, Cai, Morris, Liang, and
+  Bernstein]{park2023generative}
+Joon~Sung Park, Joseph O'Brien, Carrie~Jun Cai, Meredith~Ringel Morris, Percy
+  Liang, and Michael~S Bernstein.
+\newblock Generative agents: Interactive simulacra of human behavior.
+\newblock In \emph{Proceedings of the 36th annual acm symposium on user
+  interface software and technology}, pp.\  1--22, 2023.
+
+\bibitem[Shanahan et~al.(2023)Shanahan, McDonell, and
+  Reynolds]{shanahan2023role}
+Murray Shanahan, Kyle McDonell, and Laria Reynolds.
+\newblock Role play with large language models.
+\newblock \emph{Nature}, 623\penalty0 (7987):\penalty0 493--498, 2023.
+
+\bibitem[Wang et~al.(2023)Wang, Cai, Chen, Liu, Ma, and
+  Liang]{wang2023describe}
+Zihao Wang, Shaofei Cai, Guanzhou Chen, Anji Liu, Xiaojian Ma, and Yitao Liang.
+\newblock Describe, explain, plan and select: Interactive planning with large
+  language models enables open-world multi-task agents.
+\newblock \emph{arXiv preprint arXiv:2302.01560}, 2023.
+
+\end{thebibliography}

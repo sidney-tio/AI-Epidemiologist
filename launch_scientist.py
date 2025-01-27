@@ -15,15 +15,10 @@ from datetime import datetime
 from ai_scientist.generate_ideas import generate_ideas, check_idea_novelty
 from ai_scientist.perform_experiments import perform_experiments
 from ai_scientist.perform_writeup import perform_writeup, generate_latex
+from ai_scientist.perform_interview import conduct_interviews
 from ai_scientist.perform_review import perform_review, load_paper, perform_improvement
 
 NUM_REFLECTIONS = 3
-
-#Notes to self: latex compilation is disabled already
-#TODO: Design the plotting code
-#TODO: Append interesting relevant citations
-# disable reviews
-
 
 def print_time():
     print(datetime.now().strftime("%Y-%m-%d %H:%M:%S"))
@@ -139,6 +134,118 @@ def worker(
         )
         print(f"Completed idea: {idea['Name']}, Success: {success}")
     print(f"Worker {gpu_id} finished.")
+
+
+def do_interview(
+    base_dir,
+    results_dir,
+    idea,
+    model,
+    client,
+    client_model,
+    writeup,
+    improvement,
+    log_file=False,
+):
+    ## CREATE PROJECT FOLDER
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+    idea_name = f"{timestamp}_{idea['Name']}"
+    folder_name = osp.join(results_dir, idea_name)
+    assert not osp.exists(folder_name), f"Folder {folder_name} already exists."
+    destination_dir = folder_name
+    shutil.copytree(base_dir, destination_dir, dirs_exist_ok=True)
+    exp_file = osp.join(folder_name, "experiment.py")
+    questions = osp.join(folder_name, "questions.json")
+    persona_file = osp.join(folder_name, "persona.txt")
+    notes = osp.join(folder_name, "analysis.txt")
+    with open(notes, "w") as f:
+        f.write(f"# Title: {idea['Title']}\n")
+        f.write(f"# Experiment description: {idea['Experiment']}\n")
+        f.write(f"## Interview 1: \n")
+        f.write(f"Description:.\n")
+    if log_file:
+        original_stdout = sys.stdout
+        original_stderr = sys.stderr
+        log_path = osp.join(folder_name, "log.txt")
+        log = open(log_path, "a")
+        sys.stdout = log
+        sys.stderr = log
+    try:
+        print_time()
+        print(f"*Starting idea: {idea_name}*")
+        ## PERFORM EXPERIMENTS
+        fnames = [persona_file, questions, notes]
+        io = InputOutput(
+            yes=True, chat_history_file=f"{folder_name}/{idea_name}_aider.txt"
+        )
+        if model == "deepseek-coder-v2-0724":
+            main_model = Model("deepseek/deepseek-coder")
+        elif model == "llama3.1-405b":
+            main_model = Model("openrouter/meta-llama/llama-3.1-405b-instruct")
+        else:
+            main_model = Model(model)
+        coder = Coder.create(
+            main_model=main_model,
+            fnames=fnames,
+            io=io,
+            stream=False,
+            use_git=False,
+            edit_format="diff",
+        )
+
+        print_time()
+        print(f"*Starting Interviews*")
+        try:
+            success = conduct_interviews(idea, folder_name, coder)
+        except Exception as e:
+            print(f"Error during experiments: {e}")
+            print(f"Experiments failed for idea {idea_name}")
+            return False
+
+        if not success:
+            print(f"Experiments failed for idea {idea_name}")
+            return False
+
+        print_time()
+        print(f"*Starting Writeup*")
+        ## PERFORM WRITEUP
+        if writeup == "latex":
+            writeup_file = osp.join(folder_name, "latex", "template.tex")
+            fnames = [writeup_file, notes]
+            if model == "deepseek-coder-v2-0724":
+                main_model = Model("deepseek/deepseek-coder")
+            elif model == "llama3.1-405b":
+                main_model = Model("openrouter/meta-llama/llama-3.1-405b-instruct")
+            else:
+                main_model = Model(model)
+            coder = Coder.create(
+                main_model=main_model,
+                fnames=fnames,
+                io=io,
+                stream=False,
+                use_git=False,
+                edit_format="diff",
+            )
+            try:
+                perform_writeup(idea, folder_name, coder, client, client_model)
+            except Exception as e:
+                print(f"Failed to perform writeup: {e}")
+                return False
+            print("Done writeup")
+        else:
+            raise ValueError(f"Writeup format {writeup} not supported.")
+
+        print_time()
+        return True
+    except Exception as e:
+        print(f"Failed to evaluate idea {idea_name}: {str(e)}")
+        return False
+    finally:
+        print("FINISHED IDEA")
+        if log_file:
+            sys.stdout = original_stdout
+            sys.stderr = original_stderr
+            log.close()
 
 
 def do_idea(
@@ -430,7 +537,7 @@ if __name__ == "__main__":
         for idea in novel_ideas:
             print(f"Processing idea: {idea['Name']}")
             try:
-                success = do_idea(
+                success = do_interview(
                     base_dir,
                     results_dir,
                     idea,

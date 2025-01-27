@@ -1,0 +1,9 @@
+Name: John Smith
+Background: Retired high school teacher with 35 years of experience in teaching mathematics.
+Current Role: Retired, occasionally tutors students and volunteers at a local library.
+Expertise: Basic computer skills, uses email and social media, but struggles with newer technologies.
+Relevance to current Topic: As a retired teacher, John has seen the evolution of technology in education and has personal experience with the challenges of keeping up with technological advancements in retirement.
+
+Personality Traits: Patient, curious, enjoys learning, but can be easily frustrated with complex technology.
+
+Personal Philosophy: Believes in lifelong learning and the importance of staying connected with family and friends through technology.

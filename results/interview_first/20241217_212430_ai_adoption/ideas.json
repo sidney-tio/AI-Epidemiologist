@@ -1,0 +1,65 @@
+[
+    {
+        "Name": "family_planning",
+        "Title": "Social Support in Child Rearing and Family Planning",
+        "Experiment": "We explore the role of social support in the child rearing process, and how it affects decisions to raise a child in Japan. We discuss a policy to subsidize housing for individuals to live near their families, and also increased paternity leave for fathers.",
+        "Interestingness": 8,
+        "Feasibility": 8,
+        "Novelty": 3,
+        "novel": true
+    },
+    {
+        "Name": "ai_adoption",
+        "Title": "Technology Adoption in Ageing Populations",
+        "Experiment": "We explore different policies in helping societies to increase their digital literacy and overall adoption of technology in their everyday lives.",
+        "Interestingness": 9,
+        "Feasibility": 8,
+        "Novelty": 3,
+        "novel": true
+    },
+    {
+        "Name": "loneliness",
+        "Title": "Loneliness, the Social Epidemic",
+        "Experiment": "We explore different policies in helping societies to decrease social isolation.",
+        "Interestingness": 9,
+        "Feasibility": 8,
+        "Novelty": 3,
+        "novel": false
+    },
+    {
+        "Name": "economic_incentives",
+        "Title": "Economic Incentives for Young Couples",
+        "Experiment": "We explore the impact of economic incentives and job security measures on marriage and childbirth rates among young professionals in Japan. This policy includes financial subsidies for housing, a child allowance, affordable childcare, and flexible work hours. Additionally, a public awareness campaign will inform young people about these benefits. We conduct interviews with different personas to gauge the potential impact and feasibility of these policies.",
+        "Interestingness": 9,
+        "Feasibility": 8,
+        "Novelty": 7,
+        "novel": true
+    },
+    {
+        "Name": "intergenerational_support",
+        "Title": "Intergenerational Support for Childcare and Community Integration",
+        "Experiment": "We explore the potential of integrating senior citizens into childcare and early education to support young families. This policy includes creating programs where elderly individuals can volunteer or work part-time in childcare centers, providing mentorship and assistance to young parents. To ensure effective implementation, it includes mandatory training programs for senior volunteers, safety protocols, and structured activities that promote intergenerational communication and cultural exchange. Additionally, it proposes the development of community centers that facilitate these activities and provide incentives such as small stipends or community recognition for participating senior citizens. We conduct interviews with different personas to gauge the potential impact and feasibility of these policies.",
+        "Interestingness": 9,
+        "Feasibility": 7,
+        "Novelty": 8,
+        "novel": true
+    },
+    {
+        "Name": "flexible_working",
+        "Title": "Flexible Working Arrangements for Family Life",
+        "Experiment": "We explore the impact of flexible working arrangements and remote work policies on marriage and childbirth rates among young professionals in Japan. This policy includes promoting flexible work hours, remote work options, and creating a supportive work culture that encourages work-life balance. The implementation framework involves: 1. A pilot program in selected companies to test flexible working policies; 2. Feedback mechanisms to gather responses from employees and employers; 3. Development of best practices for policy adoption; 4. Collaboration between government and private sectors to support and incentivize these policies; 5. Inclusion of mental health and well-being initiatives such as counseling, stress management workshops, and mental health days. Measurable outcomes include employee satisfaction scores, retention rates, and birth rates over a designated period. We conduct interviews with different personas, including HR managers, young professionals, and family experts, to gauge the potential impact and feasibility of these policies.",
+        "Interestingness": 9,
+        "Feasibility": 8,
+        "Novelty": 8,
+        "novel": true
+    },
+    {
+        "Name": "cultural_recreation",
+        "Title": "Cultural and Recreational Events for Social Engagement",
+        "Experiment": "We explore the impact of government-supported cultural and recreational events on marriage and childbirth rates among young adults in Japan. This policy includes organizing traditional festivals, sports leagues, art workshops, music concerts, and cooking classes that encourage social interaction. The implementation framework involves: 1. Collaboration with local governments and cultural organizations to plan and execute events; 2. Promotion of these events through social media and community channels; 3. Providing incentives such as free entry, food vouchers, and transportation subsidies to encourage participation; 4. Ensuring inclusivity and accessibility for a diverse range of participants, including those from different socio-economic backgrounds, regions, and lifestyles; 5. Follow-up support for couples who meet through these events, including relationship counseling and family planning workshops; 6. Gathering feedback from participants to continuously improve the events. We conduct interviews with different personas, including cultural experts, young adults, and event organizers, to gauge the potential impact and feasibility of these policies.",
+        "Interestingness": 9,
+        "Feasibility": 7,
+        "Novelty": 9,
+        "novel": true
+    }
+]

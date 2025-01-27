@@ -1,0 +1,21 @@
+# Title: Stress Networks: The Impact of Social Connections on Stress Reduction
+# Experiment description: This experiment explores the effect of social connections on stress levels within a community. Agents will have varying initial stress levels and coping traits such as resilience and social support-seeking behavior. The simulation will involve defining new agent traits for stress and coping mechanisms, modifying the update_agent function to incorporate these traits, and tracking the evolution of stress levels over time. Specifically, agents with higher social support and resilience are expected to show reduced stress levels, while isolated agents or those with low resilience may experience increased stress. The results will be analyzed to understand the role of social networks in stress reduction and mental health improvement.
+
+## Run 0: Baseline
+Results: {'run': {'count_INACTIVE': 10.0}}
+Description: Baseline results.
+## Run 1: Baseline
+Results: {'run': {'count_INACTIVE': 5.06, 'count_ACTIVE': 4.94}}
+Description: This plot shows the baseline scenario where agents have default levels of resilience and social support. The figure "agent_run_1_count_ACTIVE.jpg" shows the number of active agents over time, and "agent_run_1_count_INACTIVE.jpg" shows the number of inactive agents over time.
+## Run 2: High Resilience
+Results: {'run': {'count_INACTIVE': 3.2857142857142856, 'count_ACTIVE': 9.54}}
+Description: This plot shows the impact of high resilience on stress reduction. Agents have high resilience but default social support. The figure "agent_run_2_count_ACTIVE.jpg" shows the number of active agents over time, and "agent_run_2_count_INACTIVE.jpg" shows the number of inactive agents over time.
+## Run 3: High Social Support
+Results: {'run': {'count_INACTIVE': 2.7142857142857144, 'count_ACTIVE': 9.62}}
+Description: This plot shows the impact of high social support on stress reduction. Agents have high social support but default resilience. The figure "agent_run_3_count_ACTIVE.jpg" shows the number of active agents over time, and "agent_run_3_count_INACTIVE.jpg" shows the number of inactive agents over time.
+## Run 4: High Resilience and Social Support
+Results: {'run': {'count_ACTIVE': 9.96, 'count_INACTIVE': 1.0}}
+Description: This plot shows the combined impact of high resilience and high social support on stress reduction. Agents have both high resilience and high social support. The figure "agent_run_4_count_ACTIVE.jpg" shows the number of active agents over time, and "agent_run_4_count_INACTIVE.jpg" shows the number of inactive agents over time.
+## Run 5: Varying Initial Stress Levels
+Results: {'run': {'count_ACTIVE': 9.96, 'count_INACTIVE': 1.0}}
+Description: This plot shows the impact of varying initial stress levels on agent states. Agents have varying initial stress levels with default resilience and social support. The figure "agent_run_5_count_ACTIVE.jpg" shows the number of active agents over time, and "agent_run_5_count_INACTIVE.jpg" shows the number of inactive agents over time.

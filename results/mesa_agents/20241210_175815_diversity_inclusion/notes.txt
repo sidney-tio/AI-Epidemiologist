@@ -1,0 +1,5 @@
+# Title: Workplace Diversity and Inclusion: Policies and Outcomes
+# Experiment description: In this experiment, we will simulate a workplace environment where agents have characteristics such as gender and ethnicity. We will implement policies like diversity training and mentorship programs. The effectiveness of these policies will be measured through metrics like job satisfaction, promotion rates, and overall productivity. The necessary modifications include adding new attributes to the Agent class, defining interaction rules based on these attributes, and creating functions to simulate the policies.
+## Run 0: Baseline
+Results: {'run': {'count_INACTIVE': 10.0}}
+Description: Baseline results.

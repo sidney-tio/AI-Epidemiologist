@@ -1,0 +1,30 @@
+# Title: Social Support in Child Rearing and Family Planning
+# Experiment description: In this experiment, we explore the role of social support in the child rearing process, and how it affects decisions to raise a child.
+## Run 0: Baseline
+Results: {'run': {'count_INACTIVE': 10.0}}
+Description: Baseline results.
+
+### Plots:
+- `run_0_count_CONNECTED.jpg`: This plot shows the number of agents in the CONNECTED state over time. It provides a baseline for comparison with other runs.
+- `run_0_count_LONELY.jpg`: This plot shows the number of agents in the LONELY state over time. It provides a baseline for comparison with other runs.
+
+## Run 1: High Social Support
+Results: {'run': {'count_INACTIVE': 10.0}}
+Description: In this run, we simulated a high social support environment. The initial state distribution was 40% CONNECTED, 40% LONELY, and 20% RECOVERING. The connection probability was set to 0.5 to represent a higher probability of connections among agents. Despite the high social support setup, all agents ended up in the INACTIVE state, indicating that the social support did not significantly impact the agents' activity levels in this configuration.
+
+## Run 2: Low Social Support
+Results: {'run': {'count_INACTIVE': 10.0}}
+Description: In this run, we simulated a low social support environment. The initial state distribution was 20% CONNECTED, 60% LONELY, and 20% RECOVERING. The connection probability was set to 0.1 to represent a lower probability of connections among agents. Similar to Run 1, all agents ended up in the INACTIVE state, suggesting that the low social support environment also did not significantly impact the agents' activity levels in this configuration.
+
+## Run 3: Medium Social Support
+Results: {'run': {'count_INACTIVE': 10.0}}
+Description: In this run, we simulated a medium social support environment. The initial state distribution was 30% CONNECTED, 40% LONELY, and 30% RECOVERING. The connection probability was set to 0.3 to represent a moderate probability of connections among agents. As with the previous runs, all agents ended up in the INACTIVE state, indicating that even a medium level of social support did not significantly impact the agents' activity levels in this configuration.
+
+## Run 4: Very High Social Support
+Results: {'run': {'count_INACTIVE': 10.0}}
+Description: In this run, we simulated a very high social support environment. The initial state distribution was 20% LONELY, 60% CONNECTED, and 20% RECOVERING. The connection probability was set to 0.7 to represent a very high probability of connections among agents. Despite the very high social support setup, all agents ended up in the INACTIVE state, indicating that even a very high level of social support did not significantly impact the agents' activity levels in this configuration.
+
+## Run 5: Mixed Social Support
+Results: {'run': {'count_INACTIVE': 10.0}}
+Description: In this run, we simulated a mixed social support environment. The initial state distribution was 30% CONNECTED, 30% LONELY, and 40% RECOVERING. The connection probability was set to 0.4 to represent a mixed probability of connections among agents. As with the previous runs, all agents ended up in the INACTIVE state, indicating that even a mixed level of social support did not significantly impact the agents' activity levels in this configuration.
+

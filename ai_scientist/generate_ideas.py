@@ -21,7 +21,7 @@ Here are the ideas that you have already generated:
 {prev_ideas_string}
 '''
 
-Come up with the next impactful and creative idea for research experiments and directions you can feasibly investigate with the code provided.
+Come up with the next impactful and creative idea for policymaking and directions you can feasibly investigate with the code provided.
 Note that you will not have access to any additional resources or datasets.
 Make sure any idea is not overfit the specific training dataset or model, and has wider significance.
 
@@ -40,7 +40,7 @@ In <THOUGHT>, first briefly discuss your intuitions and motivations for the idea
 In <JSON>, provide the new idea in JSON format with the following fields:
 - "Name": A shortened descriptor of the idea. Lowercase, no spaces, underscores allowed.
 - "Title": A title for the idea, will be used for the report writing.
-- "Experiment": An outline of the implementation. E.g. which functions need to be added or modified, how results will be obtained, ...
+- "Experiment": Describe the policy that you will be implementing, with broad stroke ideas about how it will be operationalized, how you expect the target group to react...
 - "Interestingness": A rating from 1 to 10 (lowest to highest).
 - "Feasibility": A rating from 1 to 10 (lowest to highest).
 - "Novelty": A rating from 1 to 10 (lowest to highest).
@@ -308,7 +308,7 @@ def search_for_papers(query, result_limit=10) -> Union[None, List[Dict]]:
     return papers
 
 
-novelty_system_msg = """You are an ambitious Social Science PhD student who is looking to publish a paper that will contribute significantly to the field.
+novelty_system_msg = """You are an ambitious policymaker who is looking to publish a paper that will contribute significantly to the field.
 You have an idea and you want to check if it is novel or not. I.e., not overlapping significantly with existing literature or already well explored.
 Be a harsh critic for novelty, ensure there is a sufficient contribution in the idea for a new conference or workshop paper.
 You will be given access to the Semantic Scholar API, which you may use to survey the literature and find relevant papers to help you make your decision.

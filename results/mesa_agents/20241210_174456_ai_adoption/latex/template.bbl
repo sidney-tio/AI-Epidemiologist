@@ -1,0 +1,61 @@
+\begin{thebibliography}{8}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Davis(1989)]{Davis1989PerceivedUP}
+Fred~D. Davis.
+\newblock Perceived usefulness, perceived ease of use, and user acceptance of
+  information technology.
+\newblock \emph{MIS Q.}, 13:\penalty0 319--340, 1989.
+
+\bibitem[Niehaves \& Plattfaut(2014)Niehaves and
+  Plattfaut]{Niehaves2014InternetAB}
+Björn Niehaves and Ralf Plattfaut.
+\newblock Internet adoption by the elderly: employing is technology acceptance
+  theories for understanding the age-related digital divide.
+\newblock \emph{European Journal of Information Systems}, 23:\penalty0
+  708--726, 2014.
+
+\bibitem[Park et~al.(2023)Park, O'Brien, Cai, Morris, Liang, and
+  Bernstein]{park2023generative}
+Joon~Sung Park, Joseph O'Brien, Carrie~Jun Cai, Meredith~Ringel Morris, Percy
+  Liang, and Michael~S Bernstein.
+\newblock Generative agents: Interactive simulacra of human behavior.
+\newblock In \emph{Proceedings of the 36th annual acm symposium on user
+  interface software and technology}, pp.\  1--22, 2023.
+
+\bibitem[Poledna et~al.(2023)Poledna, Miess, Hommes, and
+  Rabitsch]{poledna2023economic}
+Sebastian Poledna, Michael~Gregor Miess, Cars Hommes, and Katrin Rabitsch.
+\newblock Economic forecasting with an agent-based model.
+\newblock \emph{European Economic Review}, 151:\penalty0 104306, 2023.
+
+\bibitem[Shanahan et~al.(2023)Shanahan, McDonell, and
+  Reynolds]{shanahan2023role}
+Murray Shanahan, Kyle McDonell, and Laria Reynolds.
+\newblock Role play with large language models.
+\newblock \emph{Nature}, 623\penalty0 (7987):\penalty0 493--498, 2023.
+
+\bibitem[Venkatesh et~al.(2021)Venkatesh, Morris, Davis, and
+  Davis]{Venkatesh2021UnifiedTO}
+Viswanath Venkatesh, Michael~G. Morris, Gordon~B. Davis, and Fred~D. Davis.
+\newblock Unified theory of acceptance and use of technology.
+\newblock 2021.
+
+\bibitem[West et~al.(2023)West, Robertson-Tessi, and Anderson]{west2023agent}
+Jeffrey West, Mark Robertson-Tessi, and Alexander~RA Anderson.
+\newblock Agent-based methods facilitate integrative science in cancer.
+\newblock \emph{Trends in cell biology}, 33\penalty0 (4):\penalty0 300--311,
+  2023.
+
+\bibitem[Zhou \& Lund(2023)Zhou and Lund]{zhou2023peer}
+Yuekuan Zhou and Peter~D Lund.
+\newblock Peer-to-peer energy sharing and trading of renewable energy in smart
+  communities─ trading pricing models, decision-making and agent-based
+  collaboration.
+\newblock \emph{Renewable Energy}, 207:\penalty0 177--193, 2023.
+
+\end{thebibliography}

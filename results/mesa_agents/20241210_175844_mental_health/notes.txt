@@ -1,0 +1,21 @@
+# Title: Mental Health and Community Productivity: Simulating the Impact of Interventions
+# Experiment description: In this experiment, we will simulate a community where agents have a mental health attribute. This attribute will influence their productivity and social interactions. A primary intervention, such as a mental health support program, will be implemented to observe its effects. The necessary modifications include adding a mental health attribute to the Agent class, defining how mental health affects agent behavior, and creating a function to simulate the mental health support program. Results will be measured through metrics such as the Community Productivity Index and the Social Engagement Score, as well as the distribution of mental health states.
+## Run 0: Baseline
+Results: {'run': {'count_INACTIVE': 10.0}}
+Description: Baseline results.
+
+### Run 1: Add Mental Health Attribute
+Results: {'run_1': {'model_means': {'Gini': 0.531714}, 'agent_means': {'Wealth': 1.0, 'Steps_not_given': 43.6712}}}
+Description: In this run, we added a `mental_health` attribute to the `Agent` class. This attribute influences the agent's behavior, specifically their movement and money-giving actions. Agents with a mental health value above 0.5 are more likely to move and give money to other agents. The results show the impact of mental health on community productivity and social interactions.
+
+### Run 4: Community-Based Mental Health Intervention
+Results: {'run_4': {'model_means': {'Gini': 0.5064099999999999}, 'agent_means': {'Wealth': 1.0, 'Steps_not_given': 8.3747}}}
+Description: In this run, we implemented a community-based mental health intervention where agents can support each other's mental health. This involved modifying the `mental_health_support_program` to include peer support, where agents can improve each other's mental health. The results show a decrease in the Gini coefficient, indicating a more equitable distribution of wealth, and a reduction in the average number of steps not given, suggesting improved social interactions and productivity.
+
+## Plot Descriptions
+
+### Model Results Plot (model_results.png)
+This plot shows the evolution of various model-level metrics over time for each run. Each subplot represents a different metric, such as the Gini coefficient, which measures wealth inequality among agents. The x-axis represents the timesteps, and the y-axis represents the value of the metric. The different lines in each subplot correspond to different runs, allowing for a comparison of how each intervention impacts the overall model metrics.
+
+### Agent Results Plot (agent_results.png)
+This plot shows the average values of various agent-level metrics over time for each run. Each subplot represents a different metric, such as the average wealth of agents or the average number of steps not given. The x-axis represents the timesteps, and the y-axis represents the average value of the metric across all agents. The different lines in each subplot correspond to different runs, allowing for a comparison of how each intervention impacts the behavior and state of individual agents.

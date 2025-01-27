@@ -1,0 +1,65 @@
+[
+    {
+        "Name": "family_planning",
+        "Title": "Social Support in Child Rearing and Family Planning",
+        "Experiment": "In this experiment, we explore the role of social support in the child rearing process, and how it affects decisions to raise a child.",
+        "Interestingness": 8,
+        "Feasibility": 8,
+        "Novelty": 3,
+        "novel": false
+    },
+    {
+        "Name": "ai_adoption",
+        "Title": "Technology Adoption in Ageing Populations",
+        "Experiment": "In this experiment, we explore different policies in helping societies to increase their digital literacy and overall adoption of technology in their everyday lives.",
+        "Interestingness": 9,
+        "Feasibility": 8,
+        "Novelty": 3,
+        "novel": true
+    },
+    {
+        "Name": "loneliness",
+        "Title": "Loneliness, the Social Epidemic",
+        "Experiment": "In this experiment, we explore different policies in helping societies to decrease social isolation.",
+        "Interestingness": 9,
+        "Feasibility": 8,
+        "Novelty": 3,
+        "novel": true
+    },
+    {
+        "Name": "wealth",
+        "Title": "Wealth for All",
+        "Experiment": "In this experiment, we explore different policies for the wealthy to better spread their wealth to equal parts of societies, such that it is equitable for all.",
+        "Interestingness": 9,
+        "Feasibility": 8,
+        "Novelty": 3,
+        "novel": false
+    },
+    {
+        "Name": "diversity_inclusion",
+        "Title": "Workplace Diversity and Inclusion: Policies and Outcomes",
+        "Experiment": "In this experiment, we will simulate a workplace environment where agents have characteristics such as gender and ethnicity. We will implement policies like diversity training and mentorship programs. The effectiveness of these policies will be measured through metrics like job satisfaction, promotion rates, and overall productivity. The necessary modifications include adding new attributes to the Agent class, defining interaction rules based on these attributes, and creating functions to simulate the policies.",
+        "Interestingness": 10,
+        "Feasibility": 8,
+        "Novelty": 8,
+        "novel": true
+    },
+    {
+        "Name": "mental_health",
+        "Title": "Mental Health and Community Productivity: Simulating the Impact of Interventions",
+        "Experiment": "In this experiment, we will simulate a community where agents have a mental health attribute. This attribute will influence their productivity and social interactions. A primary intervention, such as a mental health support program, will be implemented to observe its effects. The necessary modifications include adding a mental health attribute to the Agent class, defining how mental health affects agent behavior, and creating a function to simulate the mental health support program. Results will be measured through metrics such as the Community Productivity Index and the Social Engagement Score, as well as the distribution of mental health states.",
+        "Interestingness": 10,
+        "Feasibility": 8,
+        "Novelty": 9,
+        "novel": true
+    },
+    {
+        "Name": "environmental_sustainability",
+        "Title": "Environmental Sustainability: Impact of Policy Interventions on Carbon Footprint and Recycling Behavior",
+        "Experiment": "In this experiment, we will simulate a society where agents have attributes such as carbon footprint and recycling behavior. Policies like carbon taxes, subsidies for green products, and public awareness campaigns will be implemented. Necessary modifications include adding 'carbon_footprint' and 'recycling_behavior' attributes to the Agent class, defining how these attributes influence agent behavior, and creating functions to simulate the policies. Results will be measured through metrics like average carbon footprint, recycling rates, and overall environmental impact. Effectiveness of the policies will be analyzed by comparing these metrics before and after policy implementation.",
+        "Interestingness": 10,
+        "Feasibility": 8,
+        "Novelty": 9,
+        "novel": true
+    }
+]

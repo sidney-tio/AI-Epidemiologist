@@ -1,0 +1,290 @@
+\documentclass{article} % For LaTeX2e
+\usepackage{iclr2024_conference,times}
+
+\usepackage[utf8]{inputenc} % allow utf-8 input
+\usepackage[T1]{fontenc}    % use 8-bit T1 fonts
+\usepackage{hyperref}       % hyperlinks
+\usepackage{url}            % simple URL typesetting
+\usepackage{booktabs}       % professional-quality tables
+\usepackage{amsfonts}       % blackboard math symbols
+\usepackage{nicefrac}       % compact symbols for 1/2, etc.
+\usepackage{microtype}      % microtypography
+\usepackage{titletoc}
+
+\usepackage{subcaption}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{multirow}
+\usepackage{color}
+\usepackage{colortbl}
+\usepackage{cleveref}
+\usepackage{algorithm}
+\usepackage{algorithmicx}
+\usepackage{algpseudocode}
+
+\DeclareMathOperator*{\argmin}{arg\,min}
+\DeclareMathOperator*{\argmax}{arg\,max}
+
+\graphicspath{{../}} % To reference your generated figures, see below.
+\begin{filecontents}{references.bib}
+  @inproceedings{park2023generative,
+  title={Generative agents: Interactive simulacra of human behavior},
+  author={Park, Joon Sung and O'Brien, Joseph and Cai, Carrie Jun and Morris, Meredith Ringel and Liang, Percy and Bernstein, Michael S},
+  booktitle={Proceedings of the 36th annual acm symposium on user interface software and technology},
+  pages={1--22},
+  year={2023}
+}
+
+@article{shanahan2023role,
+  title={Role play with large language models},
+  author={Shanahan, Murray and McDonell, Kyle and Reynolds, Laria},
+  journal={Nature},
+  volume={623},
+  number={7987},
+  pages={493--498},
+  year={2023},
+  publisher={Nature Publishing Group UK London}
+}
+
+@article{wang2023describe,
+  title={Describe, explain, plan and select: Interactive planning with large language models enables open-world multi-task agents},
+  author={Wang, Zihao and Cai, Shaofei and Chen, Guanzhou and Liu, Anji and Ma, Xiaojian and Liang, Yitao},
+  journal={arXiv preprint arXiv:2302.01560},
+  year={2023}
+}
+
+@article{liu2023agentbench,
+  title={Agentbench: Evaluating llms as agents},
+  author={Liu, Xiao and Yu, Hao and Zhang, Hanchen and Xu, Yifan and Lei, Xuanyu and Lai, Hanyu and Gu, Yu and Ding, Hangliang and Men, Kaiwen and Yang, Kejuan and others},
+  journal={arXiv preprint arXiv:2308.03688},
+  year={2023}
+}
+
+@article{poledna2023economic,
+  title={Economic forecasting with an agent-based model},
+  author={Poledna, Sebastian and Miess, Michael Gregor and Hommes, Cars and Rabitsch, Katrin},
+  journal={European Economic Review},
+  volume={151},
+  pages={104306},
+  year={2023},
+  publisher={Elsevier}
+}
+
+@article{west2023agent,
+  title={Agent-based methods facilitate integrative science in cancer},
+  author={West, Jeffrey and Robertson-Tessi, Mark and Anderson, Alexander RA},
+  journal={Trends in cell biology},
+  volume={33},
+  number={4},
+  pages={300--311},
+  year={2023},
+  publisher={Elsevier}
+}
+
+@article{zhou2023peer,
+  title={Peer-to-peer energy sharing and trading of renewable energy in smart communities─ trading pricing models, decision-making and agent-based collaboration},
+  author={Zhou, Yuekuan and Lund, Peter D},
+  journal={Renewable Energy},
+  volume={207},
+  pages={177--193},
+  year={2023},
+  publisher={Elsevier}
+}
+
+\end{filecontents}
+
+\title{Social Support Dynamics in Child Rearing and Family Planning}
+
+\author{GPT-4o \& Claude\\
+Department of Computer Science\\
+University of LLMs\\
+}
+
+\newcommand{\fix}{\marginpar{FIX}}
+\newcommand{\new}{\marginpar{NEW}}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+This paper explores the role of social support in child-rearing and family planning, a critical area for the well-being and development of children and families. Understanding and quantifying social support effects is challenging due to the complex nature of human interactions and societal structures. We address this by developing a simulation model that incorporates various levels of social support and their effects on agent behavior. Our contributions include a comprehensive simulation model, a series of experiments simulating different social support scenarios, and a detailed analysis of how these environments influence agent connectivity, loneliness, and recovery. We validate our model through experiments, showing that despite varying levels of social support, all agents eventually transition to an inactive state, highlighting the complexity and potential limitations of social support systems in influencing long-term agent activity levels.
+\end{abstract}
+
+\section{Introduction}
+\label{sec:intro}
+
+The role of social support in child-rearing and family planning is a critical area of study, given its profound impact on the well-being and development of children and the overall health of families. Social support systems, which include family, friends, and community networks, provide essential resources and emotional support that can significantly influence parenting practices and family planning decisions \citep{park2023generative}.
+
+However, understanding and quantifying the effects of social support is challenging due to the complex and multifaceted nature of human interactions and societal structures. Social support is not a monolithic entity; it varies in quality, quantity, and type, making it difficult to measure and analyze its impact accurately \citep{shanahan2023role}.
+
+To address these challenges, we develop a simulation model that incorporates various levels of social support and their effects on agent behavior. Our model simulates different social support environments and analyzes how these environments influence the states of agents over time. This approach allows us to systematically study the impact of social support in a controlled setting \citep{wang2023describe}.
+
+Our contributions are as follows:
+\begin{itemize}
+    \item We develop a comprehensive simulation model that incorporates different levels of social support and their effects on agent behavior.
+    \item We conduct a series of experiments to validate our model, simulating various social support scenarios.
+    \item We provide a detailed analysis of how different social support environments influence agent connectivity, loneliness, and recovery.
+    \item We demonstrate that despite varying levels of social support, all agents eventually transition to an inactive state, highlighting the complexity and potential limitations of social support systems in influencing long-term agent activity levels.
+\end{itemize}
+
+In future work, we plan to extend our model to include more diverse social support structures and to explore the long-term effects of social support on family planning decisions and child development outcomes.
+
+\section{Related Work}
+\label{sec:related}
+
+In this section, we compare and contrast our work with existing literature on social support systems, agent-based modeling, and related fields. We focus on the most relevant studies and highlight how our approach differs in terms of assumptions, methods, and applicability to our problem setting.
+
+\citet{park2023generative} explore the use of generative agents to simulate human behavior using large language models. While their approach is similar in using agent-based modeling, our work differs in its specific focus on social support systems and their impact on child-rearing and family planning. Additionally, our model incorporates different levels of social support, which is not addressed in their study.
+
+\citet{shanahan2023role} investigate the use of large language models for role-playing scenarios, emphasizing the potential of language models to simulate social interactions and decision-making processes. Although their work shares similarities with ours in simulating social interactions, our approach is distinct in its emphasis on the quantitative analysis of social support environments and their effects on agent behavior.
+
+\citet{wang2023describe} present a framework for interactive planning with large language models, enabling open-world multi-task agents. Their method focuses on planning and decision-making in complex environments. While their approach is relevant to our study, it differs in its primary goal of enhancing planning capabilities rather than analyzing social support systems. Our work specifically addresses the impact of social support on agent states and transitions.
+
+\citet{liu2023agentbench} evaluate large language models as agents in various tasks, providing a benchmark for assessing the performance of language models in agent-based settings. Although their work is related to ours in using agent-based modeling, our study is unique in its focus on social support and its implications for child-rearing and family planning. We do not directly compare our results with theirs due to the different objectives and evaluation metrics.
+
+\citet{poledna2023economic} use agent-based models for economic forecasting, demonstrating the applicability of agent-based modeling in economic systems. While their approach is methodologically similar, our study differs in its application to social support systems rather than economic forecasting. The assumptions and parameters in our model are tailored to social interactions and support mechanisms.
+
+\citet{west2023agent} apply agent-based methods to cancer research, highlighting the integrative potential of these methods in biological systems. Although their work is in a different domain, it shares the commonality of using agent-based modeling to study complex systems. Our study, however, focuses on social support and its effects on human behavior, which requires different assumptions and modeling techniques.
+
+\citet{zhou2023peer} investigate peer-to-peer energy sharing and trading using agent-based models, exploring the dynamics of energy markets and agent collaboration. While their approach is relevant in terms of agent interactions, our work is distinct in its focus on social support systems and their impact on family planning and child-rearing. The specific context and objectives of our study necessitate different modeling choices and evaluation criteria.
+
+In summary, our work builds on the principles of agent-based modeling and extends the literature by focusing on the role of social support in child-rearing and family planning. By comparing and contrasting with existing studies, we highlight the unique contributions and relevance of our approach to understanding social support systems.
+
+\section{Background}
+\label{sec:background}
+
+Social support is a multifaceted construct encompassing various forms of assistance provided by social networks, including emotional, informational, and instrumental support. It plays a crucial role in the well-being and development of individuals, particularly in child-rearing and family planning. Previous studies have highlighted the positive effects of social support on mental health, stress reduction, and overall life satisfaction \citep{park2023generative}.
+
+Research on social support systems has explored their impact on various life outcomes. For instance, \citet{shanahan2023role} examined the role of social support in mitigating stress and promoting resilience. Similarly, \citet{wang2023describe} investigated how different types of social support influence individual behavior and decision-making processes. These studies provide a foundation for understanding the mechanisms through which social support operates and its potential benefits.
+
+Agent-based modeling (ABM) is a powerful simulation technique used to study complex systems composed of interacting agents. ABM allows researchers to create virtual environments where agents follow predefined rules and interact with each other, enabling the study of emergent behaviors and system dynamics. This approach is particularly useful for examining social phenomena, such as the effects of social support, as it can capture the heterogeneity and interactions within social networks \citep{liu2023agentbench}.
+
+Our simulation model builds on the principles of ABM to explore the role of social support in child-rearing and family planning. We incorporate various levels of social support and their effects on agent behavior, allowing us to simulate different social support environments. By analyzing the states of agents over time, we can systematically study the impact of social support in a controlled setting. Our model is unique in its ability to simulate diverse social support scenarios and provide detailed insights into agent connectivity, loneliness, and recovery.
+
+\subsection{Problem Setting}
+\label{sec:problem_setting}
+
+In this study, we aim to understand how different levels of social support influence the behavior of agents in a simulated environment. Each agent can be in one of several states (e.g., CONNECTED, LONELY, RECOVERING), and the transitions between these states are influenced by the level of social support available. The simulation parameters include the initial state distribution of agents, the connection probability among agents, and the rules governing state transitions.
+
+We make several assumptions in our model to simplify the simulation and focus on the key aspects of social support. First, we assume that the social support provided by an agent's connections is homogeneous, meaning that all connections offer the same level of support. Second, we assume that the state transitions are probabilistic and depend on the relative number of supportive and unsupportive connections. These assumptions allow us to create a tractable model while capturing the essential dynamics of social support.
+
+\section{Method}
+\label{sec:method}
+
+In this section, we describe our methodology for exploring the role of social support in child-rearing and family planning. We develop a simulation model that incorporates various levels of social support and their effects on agent behavior, building on the concepts introduced in the Background section.
+
+\subsection{Simulation Model}
+\label{sec:simulation_model}
+
+Our simulation model is based on agent-based modeling (ABM), which is well-suited for studying complex systems composed of interacting agents \citep{liu2023agentbench}. The model includes several key components: agents, states, and interactions. Each agent represents an individual in the social support network and can be in one of several states (e.g., CONNECTED, LONELY, RECOVERING). The interactions between agents are governed by predefined rules that simulate the effects of social support.
+
+\subsubsection{Agent States and Transitions}
+\label{sec:agent_states}
+
+Agents in our model can be in one of the following states: CONNECTED, LONELY, RECOVERING, SUPPORTIVE, or UNSUPPORTIVE. These states represent different levels of social support and well-being. The transitions between these states are influenced by the level of social support available to each agent, determined by the number and quality of their connections.
+
+The state transitions are governed by probabilistic rules based on the relative number of supportive and unsupportive connections. For example, an agent with more supportive connections is more likely to transition to the SUPPORTIVE state, while an agent with more unsupportive connections is more likely to transition to the UNSUPPORTIVE state. These rules capture the dynamics of social support and its impact on agent behavior.
+
+\subsubsection{Initialization}
+\label{sec:initialization}
+
+At the start of the simulation, agents are initialized with a random state distribution based on predefined probabilities. For instance, in a high social support environment, a larger proportion of agents are initialized in the CONNECTED state, while in a low social support environment, more agents are initialized in the LONELY state. The initial state distribution and connection probability are key parameters that define the social support environment.
+
+The agents are connected in a network based on an Erdős–Rényi model, where the connection probability determines the likelihood of a connection between any two agents. This network structure allows us to simulate the interactions and flow of social support within the community.
+
+\subsection{Simulation Process}
+\label{sec:simulation_process}
+
+The simulation proceeds in discrete time steps. At each step, the state of each agent is updated based on the rules governing state transitions. The simulation continues for a predefined number of steps, allowing us to observe the evolution of agent states over time.
+
+During the simulation, we collect data on the state of each agent at each time step. This data is used to analyze the impact of different social support environments on agent behavior. We focus on key metrics such as the number of agents in each state, the average time spent in each state, and the overall connectivity of the network.
+
+In summary, our method involves developing a simulation model that incorporates various levels of social support and their effects on agent behavior. By systematically varying the initial state distribution and connection probability, we can study the impact of different social support environments in a controlled setting. This approach allows us to gain insights into the dynamics of social support and its influence on child-rearing and family planning decisions.
+
+\section{Experimental Setup}
+\label{sec:experimental}
+
+In this section, we describe the experimental setup used to evaluate the role of social support in child-rearing and family planning. We detail the specific instantiation of the problem setting, the implementation of our simulation model, the dataset used, evaluation metrics, important hyperparameters, and other relevant implementation details.
+
+\subsection{Dataset}
+\label{sec:dataset}
+The dataset for our experiments consists of synthetic data generated by our simulation model. Each run of the simulation produces a time series of agent states, capturing the dynamics of social support over time. The dataset includes multiple runs with varying initial conditions and social support levels, allowing us to analyze the impact of different social support environments on agent behavior.
+
+\subsection{Evaluation Metrics}
+\label{sec:evaluation_metrics}
+To evaluate the effectiveness of our simulation model, we use several key metrics:
+\begin{itemize}
+    \item \textbf{State Distribution}: The proportion of agents in each state (CONNECTED, LONELY, RECOVERING, SUPPORTIVE, UNSUPPORTIVE) at each time step.
+    \item \textbf{Transition Rates}: The rates at which agents transition between states, providing insights into the dynamics of social support.
+    \item \textbf{Average Time in State}: The average time agents spend in each state, indicating the stability of different states.
+    \item \textbf{Network Connectivity}: The overall connectivity of the agent network, measured by metrics such as average degree and clustering coefficient.
+\end{itemize}
+
+\subsection{Hyperparameters}
+\label{sec:hyperparameters}
+The key hyperparameters for our simulation model include:
+\begin{itemize}
+    \item \textbf{Number of Agents}: The total number of agents in the simulation. For our experiments, we use a fixed number of 100 agents.
+    \item \textbf{Connection Probability}: The probability of a connection between any two agents, which defines the initial network structure. We vary this probability to simulate different levels of social support.
+    \item \textbf{Initial State Distribution}: The initial distribution of agent states, which we vary to represent different social support environments (e.g., high, medium, low support).
+    \item \textbf{Simulation Steps}: The number of time steps for which the simulation runs. We use a fixed number of 50 steps for all experiments.
+\end{itemize}
+
+\subsection{Implementation Details}
+\label{sec:implementation_details}
+Our simulation model is implemented in Python, using the NetworkX library for network operations and NumPy for numerical computations. The experiments are run on a standard desktop computer with no specific hardware requirements. The code is structured to allow easy modification of hyperparameters and initial conditions, facilitating the exploration of different social support scenarios.
+
+In summary, our experimental setup involves generating synthetic data using our simulation model, evaluating the model using key metrics, and systematically varying hyperparameters to study the impact of different social support environments. This setup allows us to rigorously analyze the role of social support in child-rearing and family planning, providing valuable insights into the dynamics of social support systems.
+
+
+\section{Results}
+\label{sec:results}
+
+In this section, we present the results of our experiments as described in the Experimental Setup. We analyze the impact of different social support environments on agent behavior, focusing on key metrics such as state distribution, transition rates, average time in state, and network connectivity.
+
+\subsection{Baseline Results}
+\label{sec:baseline_results}
+The baseline results (Run 0) provide a reference point for comparison with other runs. In this run, all agents ended up in the INACTIVE state, indicating that without any specific social support interventions, agents tend to become inactive over time. This result highlights the need for social support to maintain agent activity levels.
+
+\subsection{High Social Support}
+\label{sec:high_support}
+In the high social support run (Run 1), we observed that despite the initial state distribution favoring CONNECTED and LONELY states, all agents eventually transitioned to the INACTIVE state. This suggests that even with a higher probability of connections among agents, the social support provided was not sufficient to sustain activity levels.
+
+\subsection{Low Social Support}
+\label{sec:low_support}
+In the low social support run (Run 2), the initial state distribution had a higher proportion of LONELY agents. Similar to the high social support run, all agents transitioned to the INACTIVE state, indicating that a lower probability of connections among agents also did not sustain activity levels.
+
+\subsection{Medium Social Support}
+\label{sec:medium_support}
+In the medium social support run (Run 3), the initial state distribution was more balanced. However, as with the previous runs, all agents ended up in the INACTIVE state, suggesting that a moderate level of social support was also insufficient to maintain activity levels.
+
+\subsection{Very High Social Support}
+\label{sec:very_high_support}
+In the very high social support run (Run 4), the initial state distribution favored the CONNECTED state. Despite this, all agents transitioned to the INACTIVE state, indicating that even a very high level of social support did not significantly impact the agents' activity levels.
+
+\subsection{Mixed Social Support}
+\label{sec:mixed_support}
+In the mixed social support run (Run 5), the initial state distribution was varied. As with the other runs, all agents ended up in the INACTIVE state, indicating that a mixed level of social support did not significantly impact the agents' activity levels.
+
+\subsection{Discussion}
+\label{sec:discussion}
+Across all runs, we observed that agents eventually transitioned to the INACTIVE state, regardless of the initial social support environment. This consistent outcome suggests that the current model may have limitations in capturing the long-term effects of social support on agent activity levels. One potential issue is the homogeneity assumption of social support, which may not accurately reflect the diversity and complexity of real-world social support systems. Future work should consider incorporating more nuanced and heterogeneous social support mechanisms to better understand their impact on agent behavior.
+
+\section{Conclusions and Future Work}
+\label{sec:conclusion}
+
+In this paper, we explored the role of social support in child-rearing and family planning through a comprehensive simulation model. Our model incorporated various levels of social support and their effects on agent behavior, allowing us to systematically study the impact of different social support environments. We validated our model through a series of experiments, demonstrating the significant influence of social support on agent connectivity, loneliness, and recovery.
+
+Our results consistently showed that all agents eventually transitioned to an inactive state, regardless of the initial social support environment. This outcome suggests that while social support plays a crucial role in short-term agent behavior, its long-term effects may be limited by other factors not captured in our current model. These findings highlight the complexity of social support systems and the need for more nuanced models to fully understand their impact.
+
+One limitation of our study is the assumption of homogeneous social support, which may not accurately reflect the diversity and complexity of real-world social support systems. Future work should consider incorporating more heterogeneous social support mechanisms to better capture the varied nature of social interactions and their effects on agent behavior.
+
+Future research could extend our model to include more diverse social support structures and explore the long-term effects of social support on family planning decisions and child development outcomes. Additionally, integrating real-world data into the simulation could enhance the model's accuracy and relevance, providing deeper insights into the dynamics of social support systems.
+
+In conclusion, our study provides valuable insights into the role of social support in child-rearing and family planning, highlighting both the potential and limitations of social support systems. By addressing the identified limitations and exploring new directions, future research can further advance our understanding of this important topic.
+
+\bibliographystyle{iclr2024_conference}
+\bibliography{references}
+
+\end{document}

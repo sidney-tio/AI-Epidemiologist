@@ -1,0 +1,9 @@
+Name: Sarah Thompson
+Background: Middle-aged healthcare professional with 20 years of experience in nursing.
+Current Role: Nurse at a local hospital, frequently interacts with older patients.
+Expertise: Proficient in using medical technology and electronic health records, but observes challenges older patients face with technology.
+Relevance to current Topic: As a healthcare professional, Sarah has firsthand experience with how older adults interact with technology in a medical setting and can provide insights into their challenges and needs.
+
+Personality Traits: Compassionate, detail-oriented, patient, and dedicated to improving patient care.
+
+Personal Philosophy: Believes in the importance of empathy and understanding in healthcare, and the potential of technology to improve patient outcomes if used effectively.

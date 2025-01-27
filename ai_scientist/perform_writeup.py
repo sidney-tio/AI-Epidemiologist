@@ -131,8 +131,8 @@ per_section_tips = {
 - TL;DR of the paper
 - What are we trying to do and why is it relevant?
 - Why is this hard?
-- How do we solve it (i.e. our contribution!)
-- How do we verify that we solved it (e.g. Experiments and results)
+- Our proposed solution to the problem
+- Preliminary overview of the issues raised in the interviews
 
 Please make sure the abstract reads smoothly and is well-motivated. This should be one continuous paragraph with no breaks between the lines.
 """,
@@ -141,7 +141,7 @@ Please make sure the abstract reads smoothly and is well-motivated. This should 
 - What are we trying to do and why is it relevant?
 - Why is this hard?
 - How do we solve it (i.e. our contribution!)
-- How do we verify that we solved it (e.g. Experiments and results)
+- Why conduct interviews for this?
 - New trend: specifically list your contributions as bullet points
 - Extra space? Future work!
 """,
@@ -158,23 +158,24 @@ Please make sure the abstract reads smoothly and is well-motivated. This should 
     "Method": """
 - What we do. Why we do it. All described using the general Formalism introduced in the Problem Setting and building on top of the concepts / foundations introduced in Background.
 """,
-    "Experimental Setup": """
-- How do we test that our stuff works? Introduces a specific instantiation of the Problem Setting and specific implementation details of our Method for this Problem Setting.
-- Do not imagine unknown hardware details.
-- Includes a description of the dataset, evaluation metrics, important hyperparameters, and implementation details.
+    "Methodology": """
+- How do we go about conducting the interviews? How do we select the participants and personas towards our thesis?
+- Do not imagine unknown details.
+- Include a brief summary of the individuals interviewed and the nature of the questions asked to tease out their thoughts. You may refer to questions.json for this.
+- Describe how to go about drawing discussions, insights across all interviews
 """,
     "Results": """
-- Shows the results of running Method on our problem described in Experimental Setup.
-- Includes statements on hyperparameters and other potential issues of fairness.
-- Only includes results that have actually been run and saved in the logs. Do not hallucinate results that don't exist.
-- If results exist: compares to baselines and includes statistics and confidence intervals.
-- If results exist: includes ablation studies to show that specific parts of the method are relevant.
-- Discusses limitations of the method.
-- Make sure to include all the results from the experiments, and include all relevant figures.
+- Refer to analysis.txt for all information and summaries regarding all interviews that were conducted. Use only information from there.
+- Give a brief overview of the themes discussed, and interesting insights that the research did not expect from the interviews
+- Only includes interviews that have actually been run and saved in the logs. Do not hallucinate results that don't exist.
+- Discusses caveats and cautions about the interviews.
+- Make sure to include all the results from the interviews.
+- Discuss whether the interviews have given the proposed policy any reinforcement, or suggests why the policy may not be well accepted in its current form
 """,
     "Conclusion": """
 - Brief recap of the entire paper.
-- To keep going with the analogy, you can think of future work as (potential) academic offspring.
+- To keep going with the analogy, you can think of future work as improvements to the current policy.
+- Discuss any potential improvements to the current policy that attempts to best address all the concerns in the interviewees
 """,
 }
 
@@ -185,8 +186,7 @@ error_list = """- Unenclosed math symbols
 - Repeatedly defined figure labels
 - References to papers that are not in the .bib file, DO NOT ADD ANY NEW CITATIONS!
 - Unnecessary verbosity or repetition, unclear text
-- Results or insights in the `notes.txt` that have not yet need included
-- Any relevant figures that have not yet been included in the text
+- Results or insights in the `analysis.txt` that have not yet need included
 - Closing any \\begin{{figure}} with a \\end{{figure}} and \\begin{{table}} with a \\end{{table}}, etc.
 - Duplicate headers, e.g. duplicated \\section{{Introduction}} or \\end{{document}}
 - Unescaped symbols, e.g. shakespeare_char should be shakespeare\\_char in text
@@ -216,7 +216,7 @@ Fix any remaining errors as before:
 )
 
 # CITATION HELPERS
-citation_system_msg = """You are an ambitious AI PhD student who is looking to publish a paper that will contribute significantly to the field.
+citation_system_msg = """You are an ambitious policymaker who is looking to publish a paper that will contribute significantly to the field.
 You have already written an initial draft of the paper and now you are looking to add missing citations to related papers throughout the paper.
 The related work section already has some initial comments on which papers to add and discuss.
 
@@ -421,8 +421,7 @@ Be sure to first name the file and use *SEARCH/REPLACE* blocks to perform these 
     for section in [
         "Introduction",
         "Background",
-        "Method",
-        "Experimental Setup",
+        "Methodology",
         "Results",
         "Conclusion",
     ]:
@@ -432,7 +431,6 @@ Be sure to first name the file and use *SEARCH/REPLACE* blocks to perform these 
 Be sure to use \cite or \citet where relevant, referring to the works provided in the file.
 Do not cite anything that is not already in `references.bib`. Do not add any new entries to this.
 
-Keep the experimental results (figures and tables) only in the Results section, and make sure that any captions are filled in.
 In this pass, do not reference anything in later sections of the paper.
 
 Before every paragraph, please include a brief description of what you plan to write in that paragraph in a comment.
@@ -495,8 +493,7 @@ First, re-think the Title if necessary. Keep this concise and descriptive of the
         "Related Work",
         "Introduction",
         "Background",
-        "Method",
-        "Experimental Setup",
+        "Methodology",
         "Results",
         "Conclusion",
     ]:
@@ -538,7 +535,7 @@ if __name__ == "__main__":
             "vertex_ai/claude-3-opus@20240229",
             "vertex_ai/claude-3-5-sonnet@20240620",
             "vertex_ai/claude-3-sonnet@20240229",
-            "vertex_ai/claude-3-haiku@20240307"
+            "vertex_ai/claude-3-haiku@20240307",
         ],
         help="Model to use for AI Scientist.",
     )
@@ -594,8 +591,8 @@ if __name__ == "__main__":
     folder_name = args.folder
     idea_name = osp.basename(folder_name)
     exp_file = osp.join(folder_name, "experiment.py")
-    vis_file = osp.join(folder_name, "plot.py")
-    notes = osp.join(folder_name, "notes.txt")
+    notes = osp.join(folder_name, "analysis.txt")
+    questions = osp.join(folder_name, "questions.json")
     model = args.model
     writeup_file = osp.join(folder_name, "latex", "template.tex")
     ideas_file = osp.join(folder_name, "ideas.json")
@@ -607,7 +604,7 @@ if __name__ == "__main__":
             break
     if idea["Name"] not in idea_name:
         raise ValueError(f"Idea {idea_name} not found")
-    fnames = [exp_file, writeup_file, notes]
+    fnames = [exp_file, writeup_file, notes, questions]
     io = InputOutput(yes=True, chat_history_file=f"{folder_name}/{idea_name}_aider.txt")
     if args.model == "deepseek-coder-v2-0724":
         main_model = Model("deepseek/deepseek-coder")

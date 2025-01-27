@@ -1,0 +1,34 @@
+# Title: Environmental Sustainability: Impact of Policy Interventions on Carbon Footprint and Recycling Behavior
+# Experiment description: In this experiment, we will simulate a society where agents have attributes such as carbon footprint and recycling behavior. Policies like carbon taxes, subsidies for green products, and public awareness campaigns will be implemented. Necessary modifications include adding 'carbon_footprint' and 'recycling_behavior' attributes to the Agent class, defining how these attributes influence agent behavior, and creating functions to simulate the policies. Results will be measured through metrics like average carbon footprint, recycling rates, and overall environmental impact. Effectiveness of the policies will be analyzed by comparing these metrics before and after policy implementation.
+## Run 0: Baseline
+Results: {'run': {'count_INACTIVE': 10.0}}
+Description: Baseline results.
+
+## Run 1: Carbon Tax
+Results: {'run_1': {'model_means': {'Gini': 0.256724}, 'agent_means': {'Wealth': 1.0, 'Steps_not_given': 4.5556, 'CarbonFootprint': 1.2926377055260592, 'RecyclingBehavior': 0.50376475843137}}}
+Description: Implemented a carbon tax policy that increases the cost for agents with higher carbon footprints. This run aimed to observe the impact of carbon taxes on agent behavior and overall environmental metrics.
+
+## Run 2: Subsidies for Green Products
+Results: {'run_2': {'model_means': {'Gini': 0.5051688569659202}, 'agent_means': {'Wealth': 23.275, 'Steps_not_given': 4.368, 'CarbonFootprint': 1.3042706640095192, 'RecyclingBehavior': 0.47397562453813197}}}
+Description: Implemented subsidies for agents who exhibit better recycling behavior. This run aimed to observe the impact of financial incentives on recycling behavior and overall environmental metrics.
+
+## Run 3: Public Awareness Campaign
+Results: {'run_3': {'model_means': {'Gini': 0.2017875345387509}, 'agent_means': {'Wealth': 41.4714, 'Steps_not_given': 3.8865, 'CarbonFootprint': 1.2649777375537579, 'RecyclingBehavior': 0.8322677213943982}}}
+Description: Implemented a public awareness campaign to improve recycling behavior. This run aimed to observe the impact of increased awareness on recycling behavior and overall environmental metrics.
+
+## Run 4: Combined Policy
+Results: {'run_4': {'model_means': {'Gini': 0.604863929398585}, 'agent_means': {'Wealth': 6.552, 'Steps_not_given': 18.85, 'CarbonFootprint': 1.2432875754751673, 'RecyclingBehavior': 0.7973642235426694}}}
+Description: Implemented a combined policy approach, including carbon taxes, subsidies for green products, and public awareness campaigns. This run aimed to observe the cumulative impact of multiple policy interventions on agent behavior and overall environmental metrics.
+
+# Plot Descriptions
+## Model Results Plot (model_results.png)
+This plot shows the evolution of various model-level metrics over time for each run. The x-axis represents the timesteps, and the y-axis represents the value of the metric. Each line represents a different run, as indicated by the legend. The metrics plotted include:
+- Gini: A measure of wealth inequality among agents.
+- Any other model-level metrics collected.
+
+## Agent Results Plot (agent_results.png)
+This plot shows the evolution of various agent-level metrics over time for each run. The x-axis represents the timesteps, and the y-axis represents the average value of the metric across all agents. Each line represents a different run, as indicated by the legend. The metrics plotted include:
+- Wealth: The average wealth of agents.
+- Steps_not_given: The average number of steps agents did not give money.
+- CarbonFootprint: The average carbon footprint of agents.
+- RecyclingBehavior: The average recycling behavior of agents.

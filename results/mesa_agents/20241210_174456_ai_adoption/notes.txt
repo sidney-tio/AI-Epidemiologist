@@ -1,0 +1,29 @@
+# Title: Technology Adoption in Ageing Populations
+# Experiment description: In this experiment, we explore different policies in helping societies to increase their digital literacy and overall adoption of technology in their everyday lives.
+## Run 0: Baseline
+Results: {'run': {'count_INACTIVE': 10.0}}
+Description: Baseline results.
+
+## Run 1: Increase Initial Wealth
+Results: {'run_1': {'model_means': {'Gini': 0.0364914}, 'agent_means': {'Wealth': 10.0, 'Steps_not_given': 4.1072}}}
+Description: In this run, we increased the initial wealth of agents from 1 to 10 to observe its effect on technology adoption. The Gini coefficient, which measures inequality, was 0.0364914. The average wealth of agents remained at 10.0, and the average number of steps where agents did not give money was 4.1072.
+
+## Run 2: Increase Grid Size
+Results: {'run_2': {'model_means': {'Gini': 0.004071999999999962}, 'agent_means': {'Wealth': 10.0, 'Steps_not_given': 18.8555}}}
+Description: In this run, we increased the grid size from 20x20 to 40x40 to observe its effect on technology adoption. The Gini coefficient, which measures inequality, was 0.004071999999999962. The average wealth of agents remained at 10.0, and the average number of steps where agents did not give money increased to 18.8555.
+
+## Run 3: Add Technology Adoption Attribute
+Results: {'run_3': {'model_means': {'Gini': 0.001078599999999983}, 'agent_means': {'Wealth': 10.0, 'Steps_not_given': 14.7199, 'Tech_Adoption': 46.4724}}}
+Description: In this run, we introduced a new attribute `tech_adoption` to agents to track their technology adoption over time. The Gini coefficient, which measures inequality, was 0.001078599999999983. The average wealth of agents remained at 10.0, the average number of steps where agents did not give money was 14.7199, and the average technology adoption score was 46.4724.
+
+## Run 4: Introduce Policy Intervention
+Results: {'run_4': {'model_means': {'Gini': 0.0056377999999999776}, 'agent_means': {'Wealth': 10.0, 'Steps_not_given': 16.4219, 'Tech_Adoption': 46.5062}}}
+Description: In this run, we implemented a policy where agents with low `tech_adoption` receive help from agents with high `tech_adoption`. The Gini coefficient, which measures inequality, was 0.0056377999999999776. The average wealth of agents remained at 10.0, the average number of steps where agents did not give money was 16.4219, and the average technology adoption score was 46.5062.
+
+# Plot Descriptions
+
+## Model Results Plot (model_results.png)
+Description: This plot shows the evolution of various model-level metrics over time for each run. The metrics include the Gini coefficient, which measures inequality, and other relevant model-level statistics. Each line represents a different run, allowing for a comparison of how different scenarios impact these metrics over time.
+
+## Agent Results Plot (agent_results.png)
+Description: This plot shows the average values of various agent-level attributes over time for each run. The attributes include wealth, steps where agents did not give money, and technology adoption scores. Each line represents a different run, allowing for a comparison of how different scenarios impact these attributes over time.

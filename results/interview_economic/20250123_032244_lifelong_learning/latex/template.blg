@@ -1,0 +1,49 @@
+This is BibTeX, Version 0.99d (TeX Live 2024)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: template.aux
+The style file: iclr2024_conference.bst
+Database file #1: references.bib
+Warning--I didn't find a database entry for "olaleye2024bridging"
+Warning--I didn't find a database entry for "viumdal2023industry"
+You've used 6 entries,
+            2773 wiz_defined-function locations,
+            630 strings with 6263 characters,
+and the built_in function-call counts, 3590 in all, are:
+= -- 292
+> -- 305
+< -- 2
++ -- 102
+- -- 96
+* -- 327
+:= -- 577
+add.period$ -- 18
+call.type$ -- 6
+change.case$ -- 49
+chr.to.int$ -- 6
+cite$ -- 12
+duplicate$ -- 131
+empty$ -- 231
+format.name$ -- 104
+if$ -- 723
+int.to.chr$ -- 1
+int.to.str$ -- 1
+missing$ -- 6
+newline$ -- 38
+num.names$ -- 24
+pop$ -- 94
+preamble$ -- 1
+purify$ -- 43
+quote$ -- 0
+skip$ -- 114
+stack$ -- 0
+substring$ -- 99
+swap$ -- 12
+text.length$ -- 1
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 66
+warning$ -- 0
+while$ -- 26
+width$ -- 0
+write$ -- 83
+(There were 2 warnings)

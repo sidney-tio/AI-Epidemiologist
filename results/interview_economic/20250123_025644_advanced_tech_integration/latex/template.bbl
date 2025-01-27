@@ -1,0 +1,50 @@
+\begin{thebibliography}{6}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Liu et~al.(2023)Liu, Yu, Zhang, Xu, Lei, Lai, Gu, Ding, Men, Yang,
+  et~al.]{liu2023agentbench}
+Xiao Liu, Hao Yu, Hanchen Zhang, Yifan Xu, Xuanyu Lei, Hanyu Lai, Yu~Gu,
+  Hangliang Ding, Kaiwen Men, Kejuan Yang, et~al.
+\newblock Agentbench: Evaluating llms as agents.
+\newblock \emph{arXiv preprint arXiv:2308.03688}, 2023.
+
+\bibitem[Lykov et~al.(2023)Lykov, Dronova, Naglov, Litvinov, Satsevich,
+  Bazhenov, Berman, Shcherbak, and Tsetserukou]{Lykov2023LLMMARSLL}
+Artem Lykov, Maria Dronova, Nikolay Naglov, Mikhail Litvinov, S.~Satsevich,
+  Artem Bazhenov, Vladimir Berman, Aleksei Shcherbak, and D.~Tsetserukou.
+\newblock Llm-mars: Large language model for behavior tree generation and
+  nlp-enhanced dialogue in multi-agent robot systems.
+\newblock \emph{ArXiv}, abs/2312.09348, 2023.
+
+\bibitem[Park et~al.(2023)Park, O'Brien, Cai, Morris, Liang, and
+  Bernstein]{park2023generative}
+Joon~Sung Park, Joseph O'Brien, Carrie~Jun Cai, Meredith~Ringel Morris, Percy
+  Liang, and Michael~S Bernstein.
+\newblock Generative agents: Interactive simulacra of human behavior.
+\newblock In \emph{Proceedings of the 36th annual acm symposium on user
+  interface software and technology}, pp.\  1--22, 2023.
+
+\bibitem[Poledna et~al.(2023)Poledna, Miess, Hommes, and
+  Rabitsch]{poledna2023economic}
+Sebastian Poledna, Michael~Gregor Miess, Cars Hommes, and Katrin Rabitsch.
+\newblock Economic forecasting with an agent-based model.
+\newblock \emph{European Economic Review}, 151:\penalty0 104306, 2023.
+
+\bibitem[Shanahan et~al.(2023)Shanahan, McDonell, and
+  Reynolds]{shanahan2023role}
+Murray Shanahan, Kyle McDonell, and Laria Reynolds.
+\newblock Role play with large language models.
+\newblock \emph{Nature}, 623\penalty0 (7987):\penalty0 493--498, 2023.
+
+\bibitem[Zhou \& Lund(2023)Zhou and Lund]{zhou2023peer}
+Yuekuan Zhou and Peter~D Lund.
+\newblock Peer-to-peer energy sharing and trading of renewable energy in smart
+  communities─ trading pricing models, decision-making and agent-based
+  collaboration.
+\newblock \emph{Renewable Energy}, 207:\penalty0 177--193, 2023.
+
+\end{thebibliography}

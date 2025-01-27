@@ -1,0 +1,9 @@
+# Title: Loneliness, the Social Epidemic
+# Experiment description: In this experiment, we explore different policies in helping societies to decrease social isolation.
+## Run 0: Baseline
+Results: {'run': {'count_INACTIVE': 10.0}}
+Description: Baseline results.
+
+## Run 1: Increased Interaction
+Results: {'run_1': {'model_means': {'Gini': 0.518062}, 'agent_means': {'Wealth': 1.0, 'Steps_not_given': 10.3556}}}
+Description: In this run, we increased the probability of agents interacting with each other by modifying the `give_money` method to make agents more likely to give money. This was done to see if increased interaction would help reduce social isolation.

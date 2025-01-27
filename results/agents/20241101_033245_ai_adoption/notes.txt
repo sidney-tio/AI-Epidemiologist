@@ -1,0 +1,32 @@
+# Title: Technology Adoption in Ageing Populations
+# Experiment description: In this experiment, we explore different policies in helping societies to increase their digital literacy and overall adoption of technology in their everyday lives.
+## Run 0: Baseline
+Results: {'run': {'count_INACTIVE': 10.0}}
+## Run 4: Mixed Approach
+Results: {'run': {'count_ACTIVE': 10.0}}
+Description: In this run, we combined the policies from Run 1 (increased social connectivity) and Run 2 (higher initial proportion of ACTIVE agents) to see if a mixed approach yields better results. The results showed that all agents became ACTIVE, indicating that the mixed approach was highly effective.
+
+# Plot Descriptions
+## Baseline (run_0)
+- **Filename:** agent_run_0_count_INACTIVE.jpg
+- **Description:** This plot shows the number of inactive agents over time in the baseline scenario. The number of inactive agents remains constant, indicating no change in agent states without any intervention.
+
+## Increased Social Connectivity (run_1)
+- **Filename:** agent_run_1_count_ACTIVE.jpg
+- **Description:** This plot shows the number of active agents over time when the connection probability is increased. The number of active agents increases slightly, suggesting that increased social connectivity has a minor positive effect on agent activation.
+
+## Digital Literacy Campaign (run_2)
+- **Filename:** agent_run_2_count_ACTIVE.jpg
+- **Description:** This plot shows the number of active agents over time when a higher initial proportion of agents are active. The number of active agents increases significantly, indicating that starting with a higher proportion of active agents can lead to greater overall activation.
+
+## Targeted Support (run_3)
+- **Filename:** agent_run_3_count_ACTIVE.jpg
+- **Description:** This plot shows the number of active agents over time when targeted support is provided to inactive agents. The number of active agents rapidly increases to the maximum, demonstrating that targeted support is highly effective in activating agents.
+
+## Mixed Approach (run_4)
+- **Filename:** agent_run_4_count_ACTIVE.jpg
+- **Description:** This plot shows the number of active agents over time when both increased social connectivity and a higher initial proportion of active agents are combined. The number of active agents quickly reaches the maximum, indicating that the mixed approach is highly effective.
+
+## Control Group (run_5)
+- **Filename:** agent_run_5_count_INACTIVE.jpg
+- **Description:** This plot shows the number of inactive agents over time in the control group scenario. The number of inactive agents remains constant, similar to the baseline, indicating no change in agent states without any intervention.
